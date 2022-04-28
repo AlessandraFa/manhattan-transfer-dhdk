@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="mystyle.css">    
+    <title>MT - TEI Encoding</title>
+    <link rel="icon" href="/typetravel/images/icon.svg"></link>
+    <link rel="icon" href="/typetravel/images/icons/t-t.svg"></link>
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    <!-- HEADER -->
+
+        <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light p-2 nav-fixed fixed-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand justify-content-lg-start ps-2 " href="index.html">MT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item ps-2">
+                <a class="nav-link active" aria-current="page" href="index.html" id="nav-active-link">Home</a>
+            </li>
+            <li class="nav-item dropdown ps-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sections
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="1_TEI_Issue.html">Text Encoding</a></li>
+                <li><a class="dropdown-item" href="2_Voyant_Issue.html">Voyant</a></li>
+                <li><a class="dropdown-item" href="3_Network_Issue.html">Network Analysis</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link active" aria-current="page" href="#" id="nav-active-link">About the project</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link active" aria-current="page" href="https://en.wikisource.org/wiki/Manhattan_Transfer" target="_blank" id="nav-active-link">Resources</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link active" aria-current="page" href="#" target="_blank" id="nav-active-link">PDF</a>
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+
+      <div class="container-fluid" id="article1">
+        <!-- start first row -->
+        <div class="row">
+          <div class="col-2" id="article-left">
+            <div id="list-example" class="list-group">
+              <a class="list-group-item list-group-item-action" href="#list-item-1">Introduction</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-2">Resources and Methodology</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-3">Encoding Categories</a>
+              <a class="list-group-item list-group-item-action" href="#list-item-4">Conclusion</a>
+            </div>
+          </div>
+          <div class="col-8 art-header">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h1 id="article-title">Text encoding of John Dos Passos’s Novel Manhattan Transfer</h1>
+              <h2>Description of the encoding process following TEI guidelines</h2>
+              <p><i><b>Abstract:</b> Ut autem reiciendis 33 galisum reprehenderit At enim dolorem et sunt quis aut nesciunt asperiores aut asperiores minus quo pariatur quia. Ut laudantium asperiores ex vitae vitae sit galisum enim At  Ut autem reiciendis 33 galisum reprehenderit At enim dolorem et sunt quis aut nesciunt asperiores aut asperiores minus quo pariatur quia. Ut laudantium asperiores ex vitae vitae sit galisum enim At</i>
+              </p>
+              <div id="list-item-1" class="text-sep"></div>
+              <h3>Introduction</h3>
+              <p>This section covers the methodology of the encoding of the novel <a href="https://en.wikipedia.org/wiki/Manhattan_Transfer_(novel)" target="_blank"><i>Manhattan Transfer</i> by American novelist <a href="https://en.wikipedia.org/wiki/John_Dos_Passos" target="_blank">John Dos Passos</a>, published in 1925. The novel deals with the stories of several characters and is set New York in the 1920s, in the time often referred to as the <i>Jazz Era</i>. The novel is structured into three sections and each section is divided into chapters.</p>
+              <p>This report describes the process and choices related to the encoding of the novel, based on the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html" target="_blank">guidelines</a> of the <a href="https://tei-c.org/" target="_blank"><i>Text Encoding Initiative</i></a>. It focuses on different categories introduced in the following chapter to subdivide the elements and the attributes used for the encoding. These categories are People, Places, Organizations, Language, Speech and Thought, Time and Measures, and Varia. Below, you will find some text snippets as examples, however the full encoded text is available as xml file <a href="#" target="_blank">here</a>, as txt file <a href="#" target="_blank">here</a> or in the <a href="#">download section</a> below.</p>
+              <div id="list-item-2" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h3>Resources and methodology</h3>
+              <p>The novel <i>Manhattan Transfer</i> is a public domain novel since it was published in 1925, thus more than seventy years ago. The full text is available on several online platforms; the text used by the authors of this work was downloaded from <i>Wikisource</i> (<a href="https://en.wikisource.org/wiki/Manhattan_Transfer" target="_blank">full text</a>).</p>
+              <p>The novel was divided into two parts to carry out the encoding and each part was encoded by a member of the group. It was performed manually, both in a linear way or using regular expressions to find specific passages in the text and check if all occurrences were encoded correctly.</p>
+              <p>The primary resource used for the encoding of <i>Manhattan Transfer</i> are the guidelines of the <a href="https://tei-c.org/" target="_blank"><i>Text Encoding Initiative</i></a> (<a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html" target="_blank"> TEI guidelines</a>), a consortium that develops and maintains the standards for the encoding of digital text. The explanations and examples contained in the guidelines were used to select the most appropriate elements and attributes.</p>
+              <p>The encoding related to the use of language by the author was developed following information on the <a href="https://www.oxfordlearnersdictionaries.com/" target="_blank"><i>Oxford Advanced Learner’s Dictionary</i></a>, used as reference to define language variations, uncommon or informal uses, as explained in the <a href="#">Language</a> section below.</p>
+              <div id="list-item-3" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h3>Encoding Categories</h3>
+              <p>The following sections illustrate the <a href="https://tei-c.org/" target="_blank"><i>TEI</i></a> <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/REF-ELEMENTS.html" target="_blank">elements</a> and <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/REF-ATTS.html" target="_blank">attributes</a> used for the encoding of <i>Manhattan Transfer</i>, and the reasons behind each choice. They are divided into categories based on their use and meaning to allow the user to navigate more easily.</p>
+
+              <h4>Novel structure</h4> <!--Laura-->
+              <p>Text sections etc., epigraph, chapters, paragraph etc.</p>
+
+              <h4>People</h4>
+              <p>Characters’ names were encoded using multiple elements, listed below. The most relevant among them were also given an ID in the form <i>#NameSurname</i> (or <i>#Name</i> if the surname is unknown). IDs are listed as attributes in the <b>&lt;person&gt;</b> element using the attribute <a href="https://www.w3.org/TR/xml-id/" target="_blank">@xml:id</a> to assign a unique identifier to each character. These can be found in the characters’ list contained in the element <b>&lt;listPerson&gt;</b> included in the <b>&lt;standOff&gt;</b> element. The element <b>&lt;standOff&gt;</b> can be used to include information that is not meant to appear on screen. In this case this element was used to include information about individuals mentioned in <i>Manhattan Transfer</i>, including their IDs.  These are used to identify the same characters in the text and are included in the element <b>&lt;persName&gt;</b> using the attribute <b>@ref</b>, in the form <b>ref="#NameSurname"</b>. Find a list of all elements used for the encoding of individuals in the following paragraphs:</p>
+              <ul>
+                <li>
+                  <p><b>&lt;persName&gt;</b> contains a proper noun or noun phrase referred to a person. It can contain one or more of the elements listed below. If related to a relevant character of the novel, the element <b>&lt;persName&gt;</b> includes the attribute <a href="https://www.w3.org/TR/xml-id/" target="_blank">@xml:id</a> containing the identifier of the character (<a href="#">example 1</a>).</p>
+                </li>
+                <li>  
+                  <p><b>&lt;forename&gt;</b> contains characters forenames or most used name. In some cases, the most used name was encoded as forename, as for Jimmy Herf; Jimmy’s first name is James, but since the character is referred to as Jimmy in the greatest part novel to distinguish him from his cousin James Merivale, the form Jimmy was adopted as his forename. The occurrences of his birthname <i>James</i> were encoded using the attribute <b>@type</b> with value <i>birth</i> (<a href="#">example 2</a>). The element <b>&lt;forename&gt;</b>  is also used to encode second names, identified through attribute <b>@sort</b>, with value <i>2</i>; if the second name is abbreviated, the attribute <b>@full</b> with value <i>abb</i> was introduced (<a href="#">example 3</a>). WITH LINK</p>
+                </li>
+                <li>
+                  <p><b>&lt;surname&gt;</b> contains characters’ family (inherited) name; in case of changes of surnames after marriage the attribute <b>@type</b> with value <i>married</i> was used (<a href="#">example 3</a>). WITH LINK</p>
+                </li>
+                <li>
+                  <p><b>&lt;roleName&gt;</b> contains components referred to a particular role or position of the character in society; examples are among others honorifics, royal titles, office, occupation, military. Role names can be abbreviated in the forms <i>Mr.</i>, <i>Mrs.</i>, <i>Dr.</i> etc. In this case, the attribute <b>@full</b> with value <i>abb</i> was added (<a href="#">example 4</a>). WITH LINK</p>
+                </li>
+                <li>
+                  <p><b>&lt;addName&gt;</b> contains an additional name component, such as a nickname. In the encoding of <i>Manhattan Transfer</i> it was used for nicknames or name variations, such as the ones related to one of the main characters, Ellen Thatcher, referred to as <i>Ellie</i>, <i>Helena</i> or <i>Elaine</i> (<a href="#">example X</a>). LINK</p>
+                </li>
+              </ul>
+                <p>Further elements were used to encode information about individuals, not strictly related to their names. These are: </p>
+              <ul>
+                <li>
+                  <p><b>&lt;occupation&gt;</b>, used to encode information about a person’s occupation or job.</p>
+                </li>
+                <li>
+                  <p><b>&lt;age value="#"&gt;</b>, used to encode information about a person’s age, indicating the value as attribute.
+                </li>
+                <li>
+                  <p><b>&lt;nationality&gt;</b>, used to encode information about a person’s nationality.</p>
+                </li>
+              </ul>
+
+              <h4>Places</h4><!--Laura-->
+              <p>Cities, countries, states, continents: inside &lt;placeName&gt; (nested: &lt;settlement&gt; type="city", &lt;bloc&gt;  type="continent", &lt;region&gt;  type="state", &lt;district&gt;, …); &lt;geogName&gt; for rivers, lakes, mountains and other geographical places (nested: &lt;geogFeat&gt;); &lt;address&gt; (nested: &lt;num&gt;); &lt;offset&gt;</p>
+
+              <h4>Organizations</h4><!--Laura-->
+              <p>Broad term, in this example refers to all organizations, institutions, brands, newspaper, also police, government etc.; use of &lt;orgName&gt;, also: &lt;orgName type="partnerNames"&gt;&lt;surname&gt;Winkle&lt;/surname&gt; & &lt;surname&gt;Gulick&lt;/surname&gt;, &lt;offset&gt;West&lt;/offset&gt; &lt;placeName&gt;&lt;country&gt;India&lt;/country&gt;&lt;/placeName&gt; Importers&lt;/orgName&gt;</p>
+
+              <h4>Language</h4><!--Ale-->
+              <p>Language variations and unusual forms are typical of John Dos Passos’s literary style. In the encoding, different elements were adopted to express different kinds of language variations.</p>
+              <p>&lt;orig&gt; was used for the encoding of misspelled words. John Dos Passos frequently adopts incorrect spellings to imitate spoken language, dialects or accents. This is the case of words such as <i>fur</i> (sometimes used instead of for in direct speech), <i>nothin</i> or <i>nutten</i> (instead of nothing), <i>‘em</i> (instead of them). The same element is used to encode incorrect grammatical forms, such as dont, wont, cant and so on, where the apostrophe was omitted for the author’s choice. <b>&lt;orig&gt;</b> was also used to encode misspellings that imitate the accent of a foreign language, such as in the case of the character Marcus Antonius Zucher, a German man who Ed Thatcher meets at the beginning of the first section and that uses terms such as <i>vill</i> (will), <i>fif</i> (five), <i>vife</i> (wife) etc.</p>
+              <p>To provide a differentiation among the several possible language variations, the element <b>&lt;distinct&lt;</b> was introduced. This element allowed to specify particular language forms, such as slang or informal words, paired to the attribute <b>@type</b> (example X). The selection of these values was based on the definitions of the Oxford Advanced Learner’s Dictionary, used as reference to specify a particular use of a word. The following values were used, as suggested by the dictionary:</p>
+              <ul>
+                <li><p><b>&lt;distinct type="informal"&gt;</b>, for words such as feller, yer, ain’t, cops, yessir etc.</p></li>
+                <li><p><b>&lt;distinct type="slang"&gt;</b> for words defined as slang or North American English, such as ye, howdy, bum (homeless person).</p></li>
+                <li><p><b>&lt;distinct type="taboo"&gt;</b> used for swearing and curse words, defined as taboo by the Oxford Advanced Learner’s Dictionary. These include profanities as well as swearing in different languages.</p></li>
+                <li><p><b>&lt;distinct type="non-standard"&gt;</b> used for non-standard spellings of words, such as <i>dunno</i> ("don’t know").</p></li>
+              </ul>
+              <p>The elements <b>&lt;orig&gt;</b> and <b>&lt;distinct&gt;</b> were also nested in case of misspelling of forms included in the dictionary as one of the categories listed above. An example is the word <i>aint</i>, encoded as <b>&lt;distinct type="informal"&gt; &lt;orig&gt;aint&lt;&#47;orig&gt;&#47;distinct&gt;</b> or <i>awright</i>, encoded as <b>&lt;distinct type="informal"&gt; &lt;orig&gt;awright&lt;&#47;orig&gt;&#47;distinct&gt;</b>.</p>
+              
+              <h4>Speech and thoughts</h4><!--Ale-->
+              <p>Use of said, who, aloud, direct. Aloud= false for thoughts, thoughts as indirect speeches in the text as aloud="false" direct="false" – stream of consciousness.</p>
+              <h4>Time, dates and measures</h4>
+              <p>&lt;time&gt;, &lt;date&gt;, &lt;measure&gt;  type: currency for money</p>
+
+              <h4>Varia</h4><!--Laura-->
+              <p>FloatingText, faith, lang, abbr, event, title, salute, </p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+
+              <h3>Conclusion</h3>
+              <p>Final considerations + possible expansions of the encoding.</p>
+            </div>
+          </div>
+          <div class="col-2" id="article-right">
+            <h3>Read more</h3>
+            <ul>
+              <li><a href="#">Section 2</a></li>
+              <li><a href="#">Section 3</a></li>
+            </ul>
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3" id="footer-left"></div>
+            <div class="col-md-3 info-footer">
+              <p>This website is a project developed by Alessandra Failla and Laura Travaglini for the 2020/2021 course <a href="">Digital Text in the Humanities</a> held by Professor <a href="">Fabio Ciotti</a></p>
+            </div>
+            <div class="col-md-3 contacts">
+              <h4>Contacts</h4>
+                <a href="mailto: laura">laura</a>
+                <a href="mailto: alessandra.failla2@studio.unibo.it">alessandra.failla2@studio.unibo.it</a>
+            </div>
+            <div class="col-md-3" id="footer-right"></div>
+          </div>
+            
+          <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-up" viewBox="0 1 16 16">
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+          </svg></button>              
+
+          <div class="row">
+            <p id="cp">© 2021 Copyright: Alessandra Failla, Laura Travaglini</p>
+              <p id="discl"><a data-bs-toggle="modal" data-bs-target="#disclaimer">Learn more</a></p>
+          </div>
+          <a name="bottom" id="bottom"></a>
+        </div>
+      </footer>
+
+    <!-- SCRIPTS -->
+
+        <!-- Bootstrap Bundle with Popper -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        
+  </body>
+</html>

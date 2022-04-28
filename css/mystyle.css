@@ -1,0 +1,315 @@
+@import url('https://fonts.googleapis.com/css2?family=Encode+Sans:wght@100;400;600&family=Limelight&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:wght@400;700&display=swap');
+
+html{
+    height: 100%;
+}
+
+body{
+    position:relative;
+}
+
+a{
+    color: #CDBF9D;
+}
+
+a:hover{
+    color: #a7883a;
+}
+.navbar{
+    background-color: #312530;
+    height: 8vh;
+}
+
+.navbar-brand{
+    font-family: limelight;
+    color: #a7883a !important;
+    font-size: 6vh;
+}
+
+.navbar-brand:hover{
+    color: #CDBF9D !important;
+}
+
+.nav-item a{
+    font-family: "encode sans";
+    color: #CDBF9D !important;
+    opacity: 0.5;
+    font-weight: 400;
+    font-size: 3vh;
+}
+
+.nav-item a:hover{
+    color: #a7883a !important;
+    opacity: 1;
+}
+
+.dropdown-menu{
+    background-color: #6d5e6b;
+    border-radius: 0;
+}
+
+.dropdown-menu a{
+    opacity: 1 !important;
+}
+
+.dropdown-menu a:hover{
+    background-color: #312530;
+}
+
+#first{
+    color: white;
+    background-color: #312530;
+    font-family: limelight;
+    height: 100vh;
+    padding-top: 18vh;
+    text-align: center;
+    background-image: url("ny2.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+}
+
+
+#first h1{
+    font-size: 16vh;
+    color: #B8902C;
+}
+#first h2{
+    font-family: "encode sans";
+    font-size: 5.6vh;
+    opacity: 0.6;
+    padding-top: 3vh;
+    font-weight: 300;
+    color: #CDBF9D;
+}
+
+#start a{
+    font-size: 3.5vh;
+    color: #ac9457 !important;
+    opacity: 1;
+    text-decoration: none;
+    margin-top: 10vh;
+    padding: 1.5vh 5vh 1.5vh 5vh;
+    text-transform: uppercase;
+}
+
+#start a:hover{
+    color: #312530 !important;
+    opacity: 1;
+    background-color: #a7883a ;
+}
+
+#novel{
+    height: 100vh;
+    background-color: #ebe2cd;
+    background-image: url(pattern6.png);
+    background-size: 80vh;
+    color: #494747;
+    font-family: "Libre Baskerville";
+}
+
+.novel-header h1, .novel-header h5,.novel-header h3{
+    font-weight: 700;
+}
+
+#novel-title{
+    background: #ebe2cd;
+    margin-top: 5vh;
+    height: 90vh;
+}
+
+#novel-intro p{
+    text-align: center;
+}
+
+#hr-first, #hr-second, #hr-third{
+    border: 1.5px solid #838282;
+    opacity: 1;
+    width:70%; 
+    margin-left:15% !important;
+    margin-right:15% !important;
+}
+
+#hr-second{
+    margin-top: 5vh;
+}
+
+.novel-header{
+    text-align: center;
+    margin-top: 6vh;
+}
+
+
+#second{
+    height: 100vh;
+}
+#second-left{
+    height: 100vh;
+    padding: 15vh;
+    background: url(pattern3.png);
+    background-size: 70vh;
+    font-family: limelight;
+    color: #312530;
+    text-align: right;
+}
+
+
+#second-right{
+    padding: 15vh;
+    font-size: 4vh;
+    font-family: "encode sans";
+    background-image: url("ny4.png");
+    background-repeat: repeat-x;
+    background-position: bottom;
+    color: #312530;
+
+}
+
+#second-left p{
+    font-family: "encode sans";
+    font-size: 3vh;
+}
+
+.article-title{
+    font-family: limelight;
+}
+
+#second ul p{
+    color: #4A3E49;
+}
+
+#second ul a{
+    text-decoration: none;
+    color: #312530;
+}
+
+#second ul a:hover{
+    color: #a7883a;
+}
+
+footer{
+    background-color: #312530;
+    color: white;
+    padding-top: 3vh;
+    text-align: center;
+    font-family: "encode sans";
+    color: #a7883a;
+}
+
+/*ARTICLES*/
+
+#article1{
+    min-height: 100vh !important;
+}
+
+#article1 .art-header{
+    margin-top: 15vh;
+    padding: 0 6vh 3vh 6vh;
+    text-align: center;
+    font-family: limelight;
+}
+
+#article1 h1{
+    color: #312530;
+    text-transform: uppercase;
+}
+
+#article1 h2{
+    color: #8e7f8c;
+    font-family: "encode sans";
+    font-weight: 600;
+    font-size: 3.5vh;
+    padding-bottom: 5vh;
+}
+
+#article1 p{
+    font-family: "encode sans";
+    font-size: 2.5vh;
+    text-align: justify;
+}
+
+#article-left{
+    padding-top: 15vh;
+    background-color: #bcb0ba;
+}
+
+#article-right{
+    padding-top: 15vh;
+    font-family: "encode sans";
+    background-color: #bcb0ba;
+}
+
+#article-right h3{
+    font-weight: 600;
+    text-align: center;
+    font-family: limelight;
+    color:white;
+}
+
+#article-right a{
+    color: #312530;
+}
+
+#article-right li{
+    list-style-type: none;
+    font-size: 2vh;
+    margin-left: 1.5vh;
+}
+
+#article1 h3, #article1 h4{
+    text-transform: uppercase;
+}
+
+#article1 h3{
+    font-size: 3.5vh;
+}
+
+#article1 h4{
+    padding-top: 3vh;
+    font-size: 3vh;
+}
+
+.text-sep{
+    padding: 5vh;
+}
+#list-example{
+    border-radius: 0%;
+}
+
+.list-group-item{
+    border: none;
+    background-color: #8e7f8c;
+    margin-top: 1vh;
+    color: white;
+    font-family: limelight;
+}
+
+.list-group-item-action:focus, .list-group-item-action:hover, .list-group-item.active {
+    color: #a7883a;
+    background-color: white;
+}
+
+#btn-back-to-top {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    height: 8vh;
+    width: 8vh;
+    border-radius: 50%;
+    display: none;
+    background-color: #312530;
+    border: none;
+}
+
+#btn-back-to-top i {
+    color: white;
+}
+
+#btn-back-to-top:hover {
+    background-color: #8e7f8c;
+}
+
+.btn-check:active+.btn-danger:focus, .btn-check:checked+.btn-danger:focus, .btn-danger.active:focus, .btn-danger:active:focus, .show>.btn-danger.dropdown-toggle:focus,.btn-check:focus + .btn-danger, .btn-danger:focus  {
+    box-shadow: 0 0 0 0.25rem rgb(142,127,140, 0.5);
+}
+
