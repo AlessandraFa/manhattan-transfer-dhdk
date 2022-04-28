@@ -64,7 +64,7 @@ a:hover{
     height: 100vh;
     padding-top: 18vh;
     text-align: center;
-    background-image: url("/css/ny2.png");
+    background-image: url("/images/ny2.png");
     background-repeat: repeat-x;
     background-position: bottom;
 }
@@ -102,7 +102,7 @@ a:hover{
 #novel{
     height: 100vh;
     background-color: #ebe2cd;
-    background-image: url("/css/pattern6.png");
+    background-image: url("/images/pattern6.png");
     background-size: 80vh;
     color: #494747;
     font-family: "Libre Baskerville";
@@ -146,7 +146,7 @@ a:hover{
 #second-left{
     height: 100vh;
     padding: 15vh;
-    background: url("/css/pattern3.png");
+    background: url("/images/pattern3.png");
     background-size: 70vh;
     font-family: limelight;
     color: #312530;
@@ -158,7 +158,7 @@ a:hover{
     padding: 15vh;
     font-size: 4vh;
     font-family: "encode sans";
-    background-image: url("/css/ny4.png");
+    background-image: url("/images/ny4.png");
     background-repeat: repeat-x;
     background-position: bottom;
     color: #312530;
