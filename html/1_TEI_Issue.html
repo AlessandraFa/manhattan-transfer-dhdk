@@ -122,7 +122,7 @@
               <p>First we have the <code><b>&lt;titlePage&gt;</b></code> with its additional info <code><b>&lt;docTitle&gt;</b></code> (and its child <code><b>&lt;titlePart&gt;</b></code>) and <code><b>&lt;docAuthor&gt;</b></code>.</p>
               <p>Then two <code><b>&lt;div type=”gen”&gt;</b></code> one for an intermediary repetition of the title and another <code><b>&lt;div type=”authorSWorks&gt;</b></code> to list all the author’s other works. This list features a <code><b>&lt;head&gt;</b></code> and the actual <code><b>&lt;list&gt;</b></code> with its various <code><b>&lt;item&gt;</b></code>.</p>
 
-              <p><code><b>&lt;figure&gt;</b></code></p>
+              <p>The element <code><b>&lt;figure&gt;</b></code> was exploited when we needed to mark the presence of a couple of illustrations present in the eletronic version chosen. Nested inside of it is the <code><b>&lt;graphic&gt;</b></code> which provides the url for the original figure. </p>
 
               <p>Once again the title is repeated with the <code><b>&lt;titlePage&gt;</b></code> tag and its child elements: <code><b>&lt;docTitle&gt;</b></code> (nested the actual <code><b>&lt;titlePart&gt;</b></code>),</p>
               <ul>
@@ -243,22 +243,25 @@
                 
               <p>Being so heterogeneous, Manhattan Transfer is full of characters from different extractions, may it be ethnic or religious or else. For this reason, we added the tag <code><b>&lt;faith&gt;</b></code> to specify any faith, religion, or belief, and <code><b>&lt;lang&gt;</b></code> for the various languages present.</p>
                 
-              <p><code><b>&lt;abbr&gt;</b></code> → usato per abbreviazioni generiche, esempi:</p>
-              <p><code><b>&lt;abbr title="Company"&gt;</b></code>Co.<code><b>&lt;/abbr&gt;</b></code></p>
-              <p><code><b>&lt;abbr title="Distinguished Service Cross"&gt;</b></code>D.S.C.<code><b>&lt;/abbr&gt;</b></code></p>
+              <p><code><b>&lt;abbr&gt;</b></code> (abbreviation) tag was used for abbreviation of any sort, then better specified in the attribute of the tag. Some examples:</p>
+              <p style="padding-left: 20vh;"><code><b>&lt;abbr title="Company"&gt;</b></code>Co.<code><b>&lt;/abbr&gt;</b></code></p>
+              <p style="padding-left: 20vh;"><code><b>&lt;abbr title="Distinguished Service Cross"&gt;</b></code>D.S.C.<code><b>&lt;/abbr&gt;</b></code></p>
                 
                 
               <p>Regarding the historical events mentioned in the story, from the most recent ones - in which a character may have taken part - to the most ancient ones, we put the <code><b>&lt;event&gt;</b></code> tag.</p>
                 
               <p>Given the careers or work environment in which the characters are usually involved, Dos Passos’s novel is full of songs, newspapers, musicals, theatrical works, etc.: for this category, we exploited the generic tag <code><b>&lt;title&gt;</b></code>, which - as the tei Guidelines states - “contains a title for any kind of work”.</p>
                 
-              <p><code><b>&lt;salute&gt;</b></code></p>
+              <p>We made use of the salutation tag, <code><b>&lt;salute&gt;</b></code>, when needed, like for example at the very beginning a this letter:</p>
+              <p style="padding: 0 20vh 0 20vh;"><code><b>&lt;salute&gt;</b></code></p> 
+              <p style="padding: 0 20vh 0 25vh;">Dear <code><b>&lt;persName ref="#EllenThatcher"&gt;</b></code> <code><b>&lt;addName type="nickname"&gt;</b></code> Elaine<code><b>&lt;/addName&gt;</b></code> <code><b>&lt;/persName&gt;</b></code>,</p> 
+              <p style="padding: 0 20vh 0 20vh;"><code><b>&lt;/salute&gt;</b></code></p>
 
               <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
                 <circle cx="8" cy="8" r="8"/>
               </svg></div>
 
-              <h3>Conclusion</h3>
+              <h4>Conclusion</h4>
               <p>Final considerations + possible expansions of the encoding.</p>
             </div>
           </div>
