@@ -10,11 +10,11 @@ body{
 }
 
 a{
-    color: #CDBF9D;
+    color: #a7883a;
 }
 
 a:hover{
-    color: #a7883a;
+    color: #CDBF9D;
 }
 .navbar{
     background-color: #312530;
@@ -72,8 +72,28 @@ a:hover{
 
 #first h1{
     font-size: 16vh;
-    color: #B8902C;
+    color: rgba(222, 167, 28, 0.6);
+    background: #222 -webkit-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff)) 0 0 no-repeat;
+    background-image: -webkit-linear-gradient(-30deg, transparent 0%, transparent 40%, #fff 50%, transparent 60%, transparent 100%);
+    -webkit-background-size: 700px;
+    -webkit-background-clip: text;
+    -webkit-animation-name: shine;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-iteration-count: infinite;
+    text-shadow: 0 0px 0px rgba(255, 249, 236, 0.3);
 }
+
+@-webkit-keyframes shine {
+  0%, 10% {
+    background-position: -1000px;
+  }
+  100% {
+    background-position: 1000px;
+  }
+}
+
+  
+
 #first h2{
     font-family: "encode sans";
     font-size: 5.6vh;
@@ -198,6 +218,10 @@ footer{
 
 /*ARTICLES*/
 
+code{
+    color: black;
+}
+
 #article1{
     min-height: 100vh !important;
 }
@@ -220,6 +244,15 @@ footer{
     font-weight: 600;
     font-size: 3.5vh;
     padding-bottom: 5vh;
+    padding-top: 2vh;
+}
+
+#article1 h3, #article1 h4{
+    color: #312530;
+}
+
+#abstract{
+    padding: 3vh 6vh 0 6vh;
 }
 
 #article1 p{
@@ -227,6 +260,14 @@ footer{
     font-size: 2.5vh;
     text-align: justify;
 }
+
+#article1 #tei-download{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #725370;
+}
+
 
 #article-left{
     padding-top: 15vh;
@@ -255,6 +296,17 @@ footer{
     font-size: 2vh;
     margin-left: 1.5vh;
 }
+ul{
+    list-style-type: disc;
+
+}
+
+ol li::marker{
+    font-family: "encode sans";
+    font-size: 2.5vh;
+    font-weight: bold;
+
+}
 
 #article1 h3, #article1 h4{
     text-transform: uppercase;
@@ -272,6 +324,11 @@ footer{
 .text-sep{
     padding: 5vh;
 }
+
+#list-item-1{
+    padding: 2vh;
+}
+
 #list-example{
     border-radius: 0%;
 }

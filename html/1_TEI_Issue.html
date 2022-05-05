@@ -20,7 +20,7 @@
         <!-- navbar start -->
       <nav class="navbar navbar-expand-lg navbar-light p-2 nav-fixed fixed-top" id="navbar">
         <div class="container-fluid">
-          <a class="navbar-brand justify-content-lg-start ps-2 " href="/index.html">MT</a>
+          <a class="navbar-brand justify-content-lg-start ps-2 " href="../index.html">MT</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
           </button>
@@ -70,7 +70,8 @@
             <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
               <h1 id="article-title">Text encoding of John Dos Passos’s Novel Manhattan Transfer</h1>
               <h2>Description of the encoding process following TEI guidelines</h2>
-              <p><i><b>Abstract:</b> Ut autem reiciendis 33 galisum reprehenderit At enim dolorem et sunt quis aut nesciunt asperiores aut asperiores minus quo pariatur quia. Ut laudantium asperiores ex vitae vitae sit galisum enim At  Ut autem reiciendis 33 galisum reprehenderit At enim dolorem et sunt quis aut nesciunt asperiores aut asperiores minus quo pariatur quia. Ut laudantium asperiores ex vitae vitae sit galisum enim At</i>
+              <p id="tei-download">Download the full encoded text <a href="#" target="_blank">HERE</a></p>
+              <p id="abstract"><i><b>Abstract:</b> Ut autem reiciendis 33 galisum reprehenderit At enim dolorem et sunt quis aut nesciunt asperiores aut asperiores minus quo pariatur quia. Ut laudantium asperiores ex vitae vitae sit galisum enim At  Ut autem reiciendis 33 galisum reprehenderit At enim dolorem et sunt quis aut nesciunt asperiores aut asperiores minus quo pariatur quia. Ut laudantium asperiores ex vitae vitae sit galisum enim At</i>
               </p>
               <div id="list-item-1" class="text-sep"></div>
               <h3>Introduction</h3>
@@ -90,66 +91,169 @@
               <h3>Encoding Categories</h3>
               <p>The following sections illustrate the <a href="https://tei-c.org/" target="_blank"><i>TEI</i></a> <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/REF-ELEMENTS.html" target="_blank">elements</a> and <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/REF-ATTS.html" target="_blank">attributes</a> used for the encoding of <i>Manhattan Transfer</i>, and the reasons behind each choice. They are divided into categories based on their use and meaning to allow the user to navigate more easily.</p>
 
-              <h4>Novel structure</h4> <!--Laura-->
-              <p>Text sections etc., epigraph, chapters, paragraph etc.</p>
+              <h4>Structure</h4> <!--Laura-->
+              <p>The initial <code><b>&lt;teiHeader&gt;</b></code> tag, completely different from the <i>front matter</i>, supplies descriptive and declarative metadata associated with a digital resource or set of resources - in our case, the Manhattan Transfer version available in the public domain. Among the <code><b>&lt;teiHeader&gt;</b></code> tag’s five principal components, we picked three: <code><b>&lt;fileDesc&gt;</b></code>, <code><b>&lt;encodingDesc&gt;</b></code>, and <code><b>&lt;profileDesc&gt;</b></code>.</p>
+
+              <p><code><b>&lt;fileDesc&gt;</b></code>: a file description, containing a full bibliographical description of the computer file itself. It has generally three mandatory parts:</p>
+              <ol>
+                <li><p><code><b>&lt;titleStmt&gt;</b></code>:it contains child elements that provide basic metadata about the document, including the title of the resource (<code><b>&lt;title&gt;</b></code>), author (<code><b>&lt;author&gt;</b></code>), and editor names, as well as the names and roles of other people who contributed to the creation of the electronic document (<code><b>&lt;respStmt&gt;</b></code>);</p></li>
+
+                <li><p><code><b>&lt;publicationStmt&gt;</b></code>: it contains basic child elements regarding publication information of the electronic text: <code><b>&lt;publisher&gt;</b></code> and <code><b>&lt;distributor&gt;</b></code>, <code><b>&lt;date&gt;</b></code>, <code><b>&lt;availability&gt;</b></code> and the specified <code><b>&lt;licence&gt;</b></code>.</p></li>
+
+                <li><p><code><b>&lt;sourceDesc&gt;</b></code>: it contains child elements that describe the original source from which the electronic text was created. Inside the tag we put: <code><b>&lt;bibl&gt;</b></code> and <code><b>&lt;listPerson&gt;</b></code>:</p></li>
+                <ul style="list-style-type:none;">
+                  <li><p><code><b>&lt;bibl type=”printSource”&gt;</b></code> and then its children: <code><b>&lt;author&gt;</b></code>, <code><b>&lt;title&gt;</b></code>, <code><b>&lt;date&gt;</b></code>, <code><b>&lt;publisher&gt;</b></code> as stated by the source.</p></li>
+                  <li><p><code><b>&lt;listPerson&gt;</b></code> contains a list of descriptions, each of which provides information about an identifiable person or a group of people, in our case the list of all Manhattan Transfer’s characters. The TEI elements used to identify characters’ names in the text are described thoroughly in the People section below.</p></li>
+                </ul>
+              </ol>
+              <p><code><b>&lt;encodingDesc&gt;</b></code>: documents the relationship between an electronic text and the source or sources from which it was derived.</p>
+              <p><code><b>&lt;profileDesc&gt;</b></code>: provides a detailed description of non-bibliographic aspects of a text. We decided to specify:</p>
+              <ul>
+                <li><p><code><b>&lt;langUsage&gt;</b></code> with its nested tags <code><b>&lt;language&gt;</b></code> and <code><b>&lt;sublanguages&gt;</b></code> (aggiungerei <code><b>&lt;sublanguages&gt;</b></code>: french, italian)</p></li>
+                <li><p><code><b>&lt;textClass&gt;</b></code> through which we provided additional information about the topics of the text by providing a couple of <code><b>&lt;keywords&gt;</b></code> (and its nested tag <code><b>&lt;term&gt;</b></code>)</p></li>
+                <li><p><code><b>&lt;textDesc&gt;</b></code> (<code><b>&lt;authorGender&gt;</b></code>, <code><b>&lt;size&gt;</b></code>, <code><b>&lt;reprintCount&gt;</b></code>, <code><b>&lt;timeSlot&gt;</b></code>)</p></li>
+              </ul>
+              <p>And finally, we ended the <code><b>&lt;teiHeader&gt;</b></code> with a couple of tags:</p>
+              <ul>
+                <li><p><code><b>&lt;extent&gt;</b></code> element indicate its size, specified with the <code><b>&lt;measure unit=”words”&gt;</b></code></p></li>
+                <li><p><code><b>&lt;revisionDesc&gt;</b></code> and its child <code><b>&lt;change&gt;</b></code>, in order to provide information about the last revision of our work</p></li>
+              </ul>
+              <p>Right after the <code><b>&lt;teiHeader&gt;</b></code>, we dealt with the front matter. The <code><b>&lt;front&gt;</b></code> tag contains any prefatory matter (such as headers, abstracts, title page, prefaces, dedications, etc.) found at the start of our document, before the main body.</p>
+              <p>First we have the <code><b>&lt;titlePage&gt;</b></code> with its additional info <code><b>&lt;docTitle&gt;</b></code> (and its child <code><b>&lt;titlePart&gt;</b></code>) and <code><b>&lt;docAuthor&gt;</b></code>.</p>
+              <p>Then two <code><b>&lt;div type=”gen”&gt;</b></code> one for an intermediary repetition of the title and another <code><b>&lt;div type=”authorSWorks&gt;</b></code> to list all the author’s other works. This list features a <code><b>&lt;head&gt;</b></code> and the actual <code><b>&lt;list&gt;</b></code> with its various <code><b>&lt;item&gt;</b></code>.</p>
+
+              <p><code><b>&lt;figure&gt;</b></code></p>
+
+              <p>Once again the title is repeated with the <code><b>&lt;titlePage&gt;</b></code> tag and its child elements: <code><b>&lt;docTitle&gt;</b></code> (nested the actual <code><b>&lt;titlePart&gt;</b></code>),</p>
+              <ul>
+                <li><p><code><b>&lt;byline&gt;</b></code></p></li>
+                <li><p><code><b>&lt;docAuthor&gt;</b></code></p></li>
+                <li><p><code><b>&lt;date&gt;</b></code></p></li>
+                <li><p><code><b>&lt;figure&gt;</b></code></p></li>
+                <li><p><code><b>&lt;docImprint&gt;</b></code> contains the imprint statement as given (usually) at the foot of a title page, in our case: the <code><b>&lt;publisher&gt;</b></code> (with the nested <code><b>&lt;name&gt;</b></code> tag) and <code><b>&lt;pubPlace&gt;</b></code> (with the nested <code><b>&lt;placeName&gt;</b></code>)</p></li>
+              </ul>
+              <p>Then we have the <code><b>&lt;biblStruct&gt;</b></code> a structured bibliographic citation, in which only bibliographic sub-elements appear and in a specified order. In our case an <code><b>&lt;editionStmt&gt;</b></code> featuring:</p>
+              <ul>
+                <li><p><code><b>&lt;title&gt;</b></code></p></li>
+                <li><p><code><b>&lt;availability&gt;</b></code> with the copyright info</p></li>
+                <li><p><code><b>&lt;byline&gt;</b></code> with the <code><b>&lt;author&gt;</b></code> tag</p></li>
+                <li><p><code><b>&lt;imprint&gt;</b></code>, with the information about the printing</p></li>
+              </ul>
+              <p>Another generic <code><b>&lt;div&gt;</b></code> specified with a type=”contents” was created in order to list the structure of the book. The <code><b>&lt;div type=”contents”&gt;</b></code> is the main container, each section introduced by a <code><b>&lt;head&gt;</b></code> tag and followed by a list with the <code><b>&lt;list&gt;</b></code> tag and its child elements <code><b>&lt;item&gt;</b></code> for each chapter</p>
+
+              <p>Each section of the book was grouped by the <code><b>&lt;group&gt;</b></code> tag - it “contains the body of a composite text, grouping together a sequence of distinct texts (or groups of such texts) which are regarded as a unit for some purpose, for example the collected works of an author, a sequence of prose essays, etc.” - then followed by the <code><b>&lt;text&gt;</b></code> tag - a container element for the actual content - and <code><b>&lt;body&gt;</b></code> - a container for the whole body of a single unitary text, excluding any front or back matter.</p>
+                
+              <p>Each section is nested inside a main <code><b>&lt;div&gt;</b></code> container featuring two attributes, one for the number of the section and the other for the type of <code><b>&lt;div&gt;</b></code> (ex. First Section: <code><b>&lt;div n=”1” type=”section”&gt;</b></code>.</p>
+                
+              <p>Same goes for the chapters (ex. <code><b>&lt;div n=”1” type=”chapter”&gt;</b></code>) to which follows a <ptr> tag targetting the previous list of contents.</p>
+                
+              <p>Each chapter is prefaced by a paragraph of what can only be described as a prose poem, which signals the theme of the chapter. For this “impressionistic paragraph” the tag <code><b>&lt;epigraph&gt;</b></code> was chosen: it identifies a quotation at the start of a division.</p>
 
               <h4>People</h4>
-              <p>Characters’ names were encoded using multiple elements, listed below. The most relevant among them were also given an ID in the form <i>#NameSurname</i> (or <i>#Name</i> if the surname is unknown). IDs are listed as attributes in the <b>&lt;person&gt;</b> element using the attribute <a href="https://www.w3.org/TR/xml-id/" target="_blank">@xml:id</a> to assign a unique identifier to each character. These can be found in the characters’ list contained in the element <b>&lt;listPerson&gt;</b> included in the <b>&lt;standOff&gt;</b> element. The element <b>&lt;standOff&gt;</b> can be used to include information that is not meant to appear on screen. In this case this element was used to include information about individuals mentioned in <i>Manhattan Transfer</i>, including their IDs.  These are used to identify the same characters in the text and are included in the element <b>&lt;persName&gt;</b> using the attribute <b>@ref</b>, in the form <b>ref="#NameSurname"</b>. Find a list of all elements used for the encoding of individuals in the following paragraphs:</p>
+              <p>Characters’ names were encoded using multiple elements, listed below. The most relevant among them were also given an ID in the form <code><b>#NameSurname</b></code> (or <code><b>#Name</b></code> if the surname is unknown). IDs are listed as attributes in the <code><b>&lt;person&gt;</b></code> element using the attribute <code><a href="https://www.w3.org/TR/xml-id/" target="_blank">@xml:id</a></code> to assign a unique identifier to each character. These can be found in the characters’ list contained in the element <code><b>&lt;listPerson&gt;</b></code> included in the <code><b>&lt;standOff&gt;</b></code> element. The element <code><b>&lt;standOff&gt;</b></code> can be used to include information that is not meant to appear on screen. In this case this element was used to include information about individuals mentioned in <i>Manhattan Transfer</i>, including their IDs.  These are used to identify the same characters in the text and are included in the element <code><b>&lt;persName&gt;</b></code> using the attribute <code><b>@ref</b></code>, in the form <code><b>ref="#NameSurname"</b></code>. Find a list of all elements used for the encoding of individuals in the following paragraphs:</p>
               <ul>
                 <li>
-                  <p><b>&lt;persName&gt;</b> contains a proper noun or noun phrase referred to a person. It can contain one or more of the elements listed below. If related to a relevant character of the novel, the element <b>&lt;persName&gt;</b> includes the attribute <a href="https://www.w3.org/TR/xml-id/" target="_blank">@xml:id</a> containing the identifier of the character (<a href="#">example 1</a>).</p>
+                  <p><code><b>&lt;persName&gt;</b></code> contains a proper noun or noun phrase referred to a person. It can contain one or more of the elements listed below. If related to a relevant character of the novel, the element <code><b>&lt;persName&gt;</b></code> includes the attribute <code><a href="https://www.w3.org/TR/xml-id/" target="_blank">@xml:id</a></code> containing the identifier of the character (<a href="#">example 1</a>).</p>
                 </li>
                 <li>  
-                  <p><b>&lt;forename&gt;</b> contains characters forenames or most used name. In some cases, the most used name was encoded as forename, as for Jimmy Herf; Jimmy’s first name is James, but since the character is referred to as Jimmy in the greatest part novel to distinguish him from his cousin James Merivale, the form Jimmy was adopted as his forename. The occurrences of his birthname <i>James</i> were encoded using the attribute <b>@type</b> with value <i>birth</i> (<a href="#">example 2</a>). The element <b>&lt;forename&gt;</b>  is also used to encode second names, identified through attribute <b>@sort</b>, with value <i>2</i>; if the second name is abbreviated, the attribute <b>@full</b> with value <i>abb</i> was introduced (<a href="#">example 3</a>). WITH LINK</p>
+                  <p><code><b>&lt;forename&gt;</b></code> contains characters forenames or most used name. In some cases, the most used name was encoded as forename, as for Jimmy Herf; Jimmy’s first name is James, but since the character is referred to as Jimmy in the greatest part novel to distinguish him from his cousin James Merivale, the form Jimmy was adopted as his forename. The occurrences of his birthname <i>James</i> were encoded using the attribute <code><b>@type</b></code> with value <i>birth</i> (<a href="#">example 2</a>). The element <code><b>&lt;forename&gt;</b></code>  is also used to encode second names, identified through attribute <code><b>@sort</b></code>, with value <i>2</i>; if the second name is abbreviated, the attribute <code><b>@full</b></code> with value <i>abb</i> was introduced (<a href="#">example 3</a>). WITH LINK</p>
                 </li>
                 <li>
-                  <p><b>&lt;surname&gt;</b> contains characters’ family (inherited) name; in case of changes of surnames after marriage the attribute <b>@type</b> with value <i>married</i> was used (<a href="#">example 3</a>). WITH LINK</p>
+                  <p><code><b>&lt;surname&gt;</b></code> contains characters’ family (inherited) name; in case of changes of surnames after marriage the attribute <code><code><b>@type</b></code></code> with value <i>married</i> was used (<a href="#">example 3</a>). WITH LINK</p>
                 </li>
                 <li>
-                  <p><b>&lt;roleName&gt;</b> contains components referred to a particular role or position of the character in society; examples are among others honorifics, royal titles, office, occupation, military. Role names can be abbreviated in the forms <i>Mr.</i>, <i>Mrs.</i>, <i>Dr.</i> etc. In this case, the attribute <b>@full</b> with value <i>abb</i> was added (<a href="#">example 4</a>). WITH LINK</p>
+                  <p><code><b>&lt;roleName&gt;</b></code> contains components referred to a particular role or position of the character in society; examples are among others honorifics, royal titles, office, occupation, military. Role names can be abbreviated in the forms <i>Mr.</i>, <i>Mrs.</i>, <i>Dr.</i> etc. In this case, the attribute <code><b>@full</b></code> with value <i>abb</i> was added (<a href="#">example 4</a>). WITH LINK</p>
                 </li>
                 <li>
-                  <p><b>&lt;addName&gt;</b> contains an additional name component, such as a nickname. In the encoding of <i>Manhattan Transfer</i> it was used for nicknames or name variations, such as the ones related to one of the main characters, Ellen Thatcher, referred to as <i>Ellie</i>, <i>Helena</i> or <i>Elaine</i> (<a href="#">example X</a>). LINK</p>
+                  <p><code><b>&lt;addName&gt;</b></code> contains an additional name component, such as a nickname. In the encoding of <i>Manhattan Transfer</i> it was used for nicknames or name variations, such as the ones related to one of the main characters, Ellen Thatcher, referred to as <i>Ellie</i>, <i>Helena</i> or <i>Elaine</i> (<a href="#">example X</a>). LINK</p>
                 </li>
               </ul>
                 <p>Further elements were used to encode information about individuals, not strictly related to their names. These are: </p>
               <ul>
                 <li>
-                  <p><b>&lt;occupation&gt;</b>, used to encode information about a person’s occupation or job.</p>
+                  <p><code><b>&lt;occupation&gt;</b></code>, used to encode information about a person’s occupation or job.</p>
                 </li>
                 <li>
-                  <p><b>&lt;age value="#"&gt;</b>, used to encode information about a person’s age, indicating the value as attribute.
+                  <p><code><b>&lt;age value="#"&gt;</b></code>, used to encode information about a person’s age, indicating the value as attribute.
                 </li>
                 <li>
-                  <p><b>&lt;nationality&gt;</b>, used to encode information about a person’s nationality.</p>
+                  <p><code><b>&lt;nationality&gt;</b></code>, used to encode information about a person’s nationality.</p>
                 </li>
               </ul>
 
               <h4>Places</h4><!--Laura-->
-              <p>Cities, countries, states, continents: inside &lt;placeName&gt; (nested: &lt;settlement&gt; type="city", &lt;bloc&gt;  type="continent", &lt;region&gt;  type="state", &lt;district&gt;, …); &lt;geogName&gt; for rivers, lakes, mountains and other geographical places (nested: &lt;geogFeat&gt;); &lt;address&gt; (nested: &lt;num&gt;); &lt;offset&gt;</p>
+              <p>When it came to the places cited in the text, we made a distinction between:</p>
+              <ol>
+                <li><p><code><b>&lt;geogName&gt;</b></code> for all the places associated with some geographical features specifying their type with other nested tags and </p></li>
+                <li><p><code><b>&lt;placeName&gt;</b></code> for other, generic places.</p></li>
+              </ol>
+              <p>And regarding the second type we decided to nest:</p>
+              <ul>
+                <li><p><code><b>&lt;geogFeat&gt;</b></code> contains a common noun identifying some geographical feature contained within a geographic name, such as valley, mount, etc.</p></li>
+              </ul>
+              <p></p>
+              <ul>
+                <li><p><code><b>&lt;bloc&gt;</b></code> for the name of a geo-political unit consisting of two or more nation states or countries (ex. <code><b>&lt;bloc type=”continent”&gt;</b></code>).</p></li>
+                <li><p><code><b>&lt;country&gt;</b></code> for the name of a geo-political unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc.</p></li>
+                <li><p><code><b>&lt;region&gt;</b></code> for any administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country (ex. <code><b>&lt;region type=”state”&gt;</b></code>).</p></li>
+                <li><p><code><b>&lt;settlement&gt;</b></code> for settlement such as a city, town, or village identified as a single geopolitical or administrative unit.</p></li>
+                <li><p><code><b>&lt;district&gt;</b></code> for any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic units. Given the American administrative configuration, we added <code>type=“borough”</code> for the five main New York boroughs and <code>type=“neighborhood”</code> for the various neighborhoods.</p></li>
+              </ul>
+              <p></p>
+              <ul>
+                <li><p><code><b>&lt;address&gt;</b></code> for postal address (and if necessary a <code><b>&lt;num&gt;</b></code> nested)</p></li>
+                <li><p><code><b>&lt;offset&gt;</b></code> for the direction of the offset between the two place names, dates, or times involved in the expression.</p></li>
+              </ul>
+
+              
 
               <h4>Organizations</h4><!--Laura-->
-              <p>Broad term, in this example refers to all organizations, institutions, brands, newspaper, also police, government etc.; use of &lt;orgName&gt;, also: &lt;orgName type="partnerNames"&gt;&lt;surname&gt;Winkle&lt;/surname&gt; & &lt;surname&gt;Gulick&lt;/surname&gt;, &lt;offset&gt;West&lt;/offset&gt; &lt;placeName&gt;&lt;country&gt;India&lt;/country&gt;&lt;/placeName&gt; Importers&lt;/orgName&gt;</p>
+              <p><i>Manhattan Transfer</i> can be considered a big, complex picture about “how to make it - by any means - in New York”. Therefore, numerous organizations, brands, etc. appear in the text. In order to highlight them we picked the befitting tag, <code><b>&lt;orgName&gt;</b></code>, and when necessary specified with additional nested tags (such as <code><b>&lt;country&gt;</b></code> or <code><b>&lt;placeName&gt;</b></code>) or an inner <code><b>type=”partnerNames”</b></code>.</p>
 
               <h4>Language</h4><!--Ale-->
               <p>Language variations and unusual forms are typical of John Dos Passos’s literary style. In the encoding, different elements were adopted to express different kinds of language variations.</p>
-              <p>&lt;orig&gt; was used for the encoding of misspelled words. John Dos Passos frequently adopts incorrect spellings to imitate spoken language, dialects or accents. This is the case of words such as <i>fur</i> (sometimes used instead of for in direct speech), <i>nothin</i> or <i>nutten</i> (instead of nothing), <i>‘em</i> (instead of them). The same element is used to encode incorrect grammatical forms, such as dont, wont, cant and so on, where the apostrophe was omitted for the author’s choice. <b>&lt;orig&gt;</b> was also used to encode misspellings that imitate the accent of a foreign language, such as in the case of the character Marcus Antonius Zucher, a German man who Ed Thatcher meets at the beginning of the first section and that uses terms such as <i>vill</i> (will), <i>fif</i> (five), <i>vife</i> (wife) etc.</p>
-              <p>To provide a differentiation among the several possible language variations, the element <b>&lt;distinct&lt;</b> was introduced. This element allowed to specify particular language forms, such as slang or informal words, paired to the attribute <b>@type</b> (example X). The selection of these values was based on the definitions of the Oxford Advanced Learner’s Dictionary, used as reference to specify a particular use of a word. The following values were used, as suggested by the dictionary:</p>
+              <p><code><b>&lt;orig&gt;</b></code> was used for the encoding of misspelled words. John Dos Passos frequently adopts incorrect spellings to imitate spoken language, dialects or accents. This is the case of words such as <i>fur</i> (sometimes used instead of for in direct speech), <i>nothin</i> or <i>nutten</i> (instead of nothing), <i>‘em</i> (instead of them). The same element is used to encode incorrect grammatical forms, such as dont, wont, cant and so on, where the apostrophe was omitted for the author’s choice. <code><b>&lt;orig&gt;</b></code> was also used to encode misspellings that imitate the accent of a foreign language, such as in the case of the character Marcus Antonius Zucher, a German man who Ed Thatcher meets at the beginning of the first section and that uses terms such as <i>vill</i> (will), <i>fif</i> (five), <i>vife</i> (wife) etc.</p>
+              <p>To provide a differentiation among the several possible language variations, the element <code><b>&lt;distinct&gt;</b></code> was introduced. This element allowed to specify particular language forms, such as slang or informal words, paired to the attribute <code><b>@type</b></code> (example X). The selection of these values was based on the definitions of the Oxford Advanced Learner’s Dictionary, used as reference to specify a particular use of a word. The following values were used, as suggested by the dictionary:</p>
               <ul>
-                <li><p><b>&lt;distinct type="informal"&gt;</b>, for words such as feller, yer, ain’t, cops, yessir etc.</p></li>
-                <li><p><b>&lt;distinct type="slang"&gt;</b> for words defined as slang or North American English, such as ye, howdy, bum (homeless person).</p></li>
-                <li><p><b>&lt;distinct type="taboo"&gt;</b> used for swearing and curse words, defined as taboo by the Oxford Advanced Learner’s Dictionary. These include profanities as well as swearing in different languages.</p></li>
-                <li><p><b>&lt;distinct type="non-standard"&gt;</b> used for non-standard spellings of words, such as <i>dunno</i> ("don’t know").</p></li>
+                <li><p><code><b>&lt;distinct type="informal"&gt;</b></code>, for words such as feller, yer, ain’t, cops, yessir etc.</p></li>
+                <li><p><code><b>&lt;distinct type="slang"&gt;</b></code> for words defined as slang or North American English, such as ye, howdy, bum (homeless person).</p></li>
+                <li><p><code><b>&lt;distinct type="taboo"&gt;</b></code> used for swearing and curse words, defined as taboo by the Oxford Advanced Learner’s Dictionary. These include profanities as well as swearing in different languages.</p></li>
+                <li><p><code><b>&lt;distinct type="non-standard"&gt;</b></code> used for non-standard spellings of words, such as <i>dunno</i> ("don’t know").</p></li>
               </ul>
-              <p>The elements <b>&lt;orig&gt;</b> and <b>&lt;distinct&gt;</b> were also nested in case of misspelling of forms included in the dictionary as one of the categories listed above. An example is the word <i>aint</i>, encoded as <b>&lt;distinct type="informal"&gt; &lt;orig&gt;aint&lt;&#47;orig&gt;&#47;distinct&gt;</b> or <i>awright</i>, encoded as <b>&lt;distinct type="informal"&gt; &lt;orig&gt;awright&lt;&#47;orig&gt;&#47;distinct&gt;</b>.</p>
+              <p>The elements <code><b>&lt;orig&gt;</b></code> and <code><b>&lt;distinct&gt;</b></code> were also nested in case of misspelling of forms included in the dictionary as one of the categories listed above. An example is the word <i>aint</i>, encoded as <code><b>&lt;distinct type="informal"&gt; &lt;orig&gt;aint&lt;&#47;orig&gt;&#47;distinct&gt;</b></code> or <i>awright</i>, encoded as <code><b>&lt;distinct type="informal"&gt; &lt;orig&gt;awright&lt;&#47;orig&gt;&#47;distinct&gt;</b></code>.</p>
               
               <h4>Speech and thoughts</h4><!--Ale-->
-              <p>Use of said, who, aloud, direct. Aloud= false for thoughts, thoughts as indirect speeches in the text as aloud="false" direct="false" – stream of consciousness.</p>
-              <h4>Time, dates and measures</h4>
-              <p>&lt;time&gt;, &lt;date&gt;, &lt;measure&gt;  type: currency for money</p>
+              <p>Dialogues are a prominent mean of communication in the novel. The element <code><b>&lt;said&gt;</b></code> was used for the encoding of direct and indirect speech, specifying the type of speech using the attribute @direct paired to either the values true or false. Whenever possible or relevant, the name of the speaking person was also introduced in this element using the attribute <code><b>@who</b></code>, paired with characters’ IDs. <code><b>&lt;said&gt;</b></code> was also used to encode characters’ thoughts, expressed in direct or indirect form, using the attribute <code><b>@aloud</b></code> paired with either the values true or false, and specifying the character’s ID as in the case of speech. The inclusion of characters’ IDs allows to keep track of characters mentions and interactions, that will be used in section 3 (<a href="#">LINK</a>) for the network analysis of the novel.</p>
+
+              <h4>Time and Measures</h4> <!--Laura-->
+              <p>Measurements in time and money were managed through the following tags.</p>
+
+              <p>Money were marked with <code><b>&lt;measure&gt;</b></code>, a generic tag containing <i>“a word or phrase referring to some quantity of an object or commodity, usually comprising a number, a unit, and a commodity name”</i>, then better described through an attribute <code><b>&lt;type=”currency”&gt;</b></code>.</p>
+
+              <p>Precise dates were marked with the <code><b>&lt;date when=””&gt;</b></code> tag and other moments in time instead with:</p>
+              <ul>
+                <li><p><code><b>&lt;time when=””&gt;</b></code> when better specified, for example like <code><b>&lt;time when=”08:30:00”&gt;</b></code>half past eight o'clock</time></p></li>
+                <li><p><code><b>&lt;time dur-iso=””&gt;</b></code> wwhen less clear cut phrasing, in which case we rely on the ISO 8601, an international standard covering time-related data. </p></li>
+              </ul>
 
               <h4>Varia</h4><!--Laura-->
-              <p>FloatingText, faith, lang, abbr, event, title, salute, </p>
+              <p>In this last section, we are going to summarize the still not mentioned tags covering very different matters.</p>
+
+              <p><code><b>&lt;floatingText&gt;</b></code> “contains a single text of any kind, whether unitary or composite, which interrupts the text containing it at any point and after which the surrounding text resumes”. We made use of this tag for example whenever a character would stop and read a piece of newspaper, a label, a sign, etc., which happens quite often.</p>
+                
+              <p>Being so heterogeneous, Manhattan Transfer is full of characters from different extractions, may it be ethnic or religious or else. For this reason, we added the tag <code><b>&lt;faith&gt;</b></code> to specify any faith, religion, or belief, and <code><b>&lt;lang&gt;</b></code> for the various languages present.</p>
+                
+              <p><code><b>&lt;abbr&gt;</b></code> → usato per abbreviazioni generiche, esempi:</p>
+              <p><code><b>&lt;abbr title="Company"&gt;</b></code>Co.<code><b>&lt;/abbr&gt;</b></code></p>
+              <p><code><b>&lt;abbr title="Distinguished Service Cross"&gt;</b></code>D.S.C.<code><b>&lt;/abbr&gt;</b></code></p>
+                
+                
+              <p>Regarding the historical events mentioned in the story, from the most recent ones - in which a character may have taken part - to the most ancient ones, we put the <code><b>&lt;event&gt;</b></code> tag.</p>
+                
+              <p>Given the careers or work environment in which the characters are usually involved, Dos Passos’s novel is full of songs, newspapers, musicals, theatrical works, etc.: for this category, we exploited the generic tag <code><b>&lt;title&gt;</b></code>, which - as the tei Guidelines states - “contains a title for any kind of work”.</p>
+                
+              <p><code><b>&lt;salute&gt;</b></code></p>
+
               <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
                 <circle cx="8" cy="8" r="8"/>
               </svg></div>
