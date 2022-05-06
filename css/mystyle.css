@@ -249,6 +249,11 @@ code{
 
 #article1 h3, #article1 h4{
     color: #312530;
+    text-align: left;
+}
+
+#article1 h5{
+    text-align: left;
 }
 
 #abstract{

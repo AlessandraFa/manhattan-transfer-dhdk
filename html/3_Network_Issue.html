@@ -73,37 +73,116 @@
               <p><i><b>Abstract:</b> Abstract about the network analysis of Manhattan Transfer using python</i>
               </p>
               <div id="list-item-1" class="text-sep"></div>
-              <h3>1. Introduction</h3>
-              <p>Necessary steps to perform a network analysis of a novel. Goals. Perspectives.</p>
-              <div id="list-item-2" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
-                <circle cx="8" cy="8" r="8"/>
-              </svg></div>
-              <h3>Divide into sections</h3>
-              <p>Steps:
-                <p>1.	Encoding: characters encoding using xml:id; pattern: NameSurname</p>
-                <p>2.	Creation of a network using Python: text scanning to find pattern (regex), creation of a dictionary with records of number of interactions between characters, graph (Gephi)</p>
-                <p>3.	Visualization of graph using Gephi</p>
-                <p>4.	Measures of centrality: Degree centrality, Betweenness Centrality, Eigenvector centrality:</p>
-                <p>a.	Degree centrality is defined as the number of edges of each node. A node, or a character in our case, with more edges, is considered more influential. What it tells us: How many direct, ‘one hop’ connections each node has to other nodes in the network. When to use it: For finding very connected individuals, popular individuals, individuals who are likely to hold most information or individuals who can quickly connect with the wider network. A bit more detail: Degree centrality is the simplest measure of node connectivity. Sometimes it’s useful to look at in-degree (number of inbound links) and out-degree (number of outbound links) as distinct measures, for example when looking at transactional data or account activity.</p>
-                <p>b.	Betweenness centrality shows how many times a node is found within the shortest path of two other nodes. What it tells us: This measure shows which nodes are ‘bridges’ between nodes in a network. It does this by identifying all the shortest paths and then counting how many times each node falls on one. When to use it: For finding the individuals who influence the flow around a system. A bit more detail: Betweenness is useful for analyzing communication dynamics, but should be used with care. A high betweenness count could indicate someone holds authority over disparate clusters in a network, or just that they are on the periphery of both clusters.</p>
-                <p>c.	Eigenvector centrality measures the importance of nodes based on their connections, but connections to other important nodes contribute more than connections to unimportant nodes. It identifies the characters that interact with powerful characters. It takes into account how well connected a node is, and how many links their connections have, and so on through the network. What it tells us: By calculating the extended connections of a node, EigenCentrality can identify nodes with influence over the whole network, not just those directly connected to it.
-                When to use it: EigenCentrality is a good ‘all-round’ SNA score, handy for understanding human social networks, but also for understanding networks like malware propagation.
-                A bit more detail: Our tools calculate each node’s EigenCentrality by converging on an eigenvector using the power iteration method. </p>
-                <p>From example analysis (https://towardsdatascience.com/the-network-of-three-kingdoms-df6f8f8a1263):</p>
-                <p>-	Introduction: Presentation of the novel, its main features, the structure. Novel in public domain, published in 1925.</p>
-                <p>-	Goal of the analysis: identification of the interactions among characters and creation of a social network represented as a graph. Calculation of centrality measures and conclusions about main characters and most influential ones. </p> 
-                <p>-	Interactions: define an interaction – “Here again, I followed Beveridge and Shan and counted an interaction between two characters when their names appear in the novel within 15 words of each other, after we have excluded common English words from the text.” Try several values and find the best one</p>
-                <p>-	Characters: what characters should be included in the analysis? Exclude characters that only appear once and do not interact with other characters in the novel (closed clusters)</p>
-                <p>-	Sections: novel is divided into 3 sections; analysis is performed on both each section separately and on the whole novel.</p>
-                <p>-	Network: Analysis of the text using python to extract characters and their interactions. Creation of a graph and visualization using Gephi. Characters constitute nodes of the network and are linked to the characters they have interacted with. Thickness of link denotes the number of interactions among the characters. Communities?</p>
-                <p>-	Centralities: calculating centrality measures to quantify the importance of characters based on interactions (degree, betweenness, eigenvector). “Higher scores denote higher importance for all three centralities. We are going to use all three centralities to determine the importance of a character but not all centralities are given the same weight. We consider eigenvector centrality to be more decisive of a character’s importance.”</p>
-                <p>1.	Analysis of each of 3 sections – communities?</p>
-                <p>2.	Analysis of the whole novel</p>
-                </p>
+
+              <h3>Introduction</h3>
+              <p>This work deals with the network analysis of John Dos Passos’ novel <i>Manhattan Transfer</i>, published in 1925. It is set in New York in the 1920s.</p>
               <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
                 <circle cx="8" cy="8" r="8"/>
               </svg></div>
-              <h3>4. Conclusion</h3>
+              <h3>Goals</h3>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h3>Premises</h3>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h3>Methodology</h3>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h4>a. Text Encoding</h4>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h4>b. Network and centrality measures with Python + Jupyter Notebook</h4>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h4>c. Graph visualization with Gephi</h4>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h3>Results</h3>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h4>1. Section 1</h4>
+              <p></p>
+              <h5>i. Content</h5>
+              <p></p>
+              <h5>ii. Graph Description</h5>
+              <img src="../images/graph_1.png">
+              <p></p>
+              <h5>iii. Centrality Measures</h5>
+              <img src="../images/Centr_MT_SECTION1.png" height="500">
+              <p></p>
+              <h5>iv. Interpretation</h5>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h4>2. Section 2</h4>
+              <p></p>
+              <h5>i. Content</h5>
+              <p></p>
+              <h5>ii. Graph Description</h5>
+              <img src="../images/graph_2.png">
+              <p></p>
+              <h5>iii. Centrality Measures</h5>
+              <img src="../images/Centr_MT_SECTION2.png" height="500">
+              <p></p>
+              <h5>iv. Interpretation</h5>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h4>3. Section 3</h4>
+              <p></p>
+              <h5>i. Content</h5>
+              <p></p>
+              <h5>ii. Graph Description</h5>
+              <img src="../images/graph_3.png">
+              <p></p>
+              <h5>iii. Centrality Measures</h5>
+              <img src="../images/Centr_MT_SECTION3.png" height="500">
+              <p></p>
+              <h5>iv. Interpretation</h5>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h4>4. Full Text</h4>
+              <p></p>
+              <h5>i. Content</h5>
+              <p></p>
+              <h5>ii. Graph Description</h5>
+              <img src="../images/graph_full.png">
+              <p></p>
+              <h5>iii. Centrality Measures</h5>
+              <img src="../images/Centr_MT_FULLTEXT.png" height="500">
+              <p></p>
+              <h5>iv. Interpretation</h5>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h3>Discussion</h3>
+              <p></p>
+              <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
+                <circle cx="8" cy="8" r="8"/>
+              </svg></div>
+              <h3>Conclusion</h3>
               <p>Conclusion about the network analysis: relevant characters, differences among sections, among centrality measures etc., further possible analysis etc.</p>
             </div>
           </div>
@@ -127,7 +206,7 @@
               <p>This website is a project developed by Alessandra Failla and Laura Travaglini for the 2020/2021 course <a href="">Digital Text in the Humanities</a> held by Professor <a href="">Fabio Ciotti</a></p>
             </div>
             <div class="col-md-3 contacts">
-              <h4>Contacts</h4>
+              <h3>Contacts</h3>
                 <a href="mailto: laura">laura</a>
                 <a href="mailto: alessandra.failla2@studio.unibo.it">alessandra.failla2@studio.unibo.it</a>
             </div>
