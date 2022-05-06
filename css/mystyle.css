@@ -276,13 +276,15 @@ code{
 
 #article-left{
     padding-top: 15vh;
-    background-color: #bcb0ba;
+    background: url("../images/pattern3.png");
+    background-size: 70vh;
 }
 
 #article-right{
     padding-top: 15vh;
     font-family: "encode sans";
-    background-color: #bcb0ba;
+    background: url("../images/pattern3.png");
+    background-size: 70vh;
 }
 
 #article-right h3{
@@ -340,15 +342,19 @@ ol li::marker{
 
 .list-group-item{
     border: none;
-    background-color: #8e7f8c;
-    margin-top: 1vh;
+    font-size: 2.5vh;
+    background-color:transparent;
     color: white;
     font-family: limelight;
 }
 
+.list-secondary{
+    font-size: 2vh;
+}
+
 .list-group-item-action:focus, .list-group-item-action:hover, .list-group-item.active {
     color: #a7883a;
-    background-color: white;
+    background-color: rgba(255,255,255,0.5);
 }
 
 #btn-back-to-top {
