@@ -357,8 +357,8 @@ ol li::marker{
 }
 
 .list-group-item-action:focus, .list-group-item-action:hover, .list-group-item.active {
-    color: #a7883a;
-    background-color: rgba(255,255,255,0.5);
+    color: #312530;
+    background-color: transparent;
 }
 
 #btn-back-to-top {
@@ -385,3 +385,58 @@ ol li::marker{
     box-shadow: 0 0 0 0.25rem rgb(142,127,140, 0.5);
 }
 
+button.back-to-top {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff;
+    height: 0px;
+    width: 0px;
+    overflow: hidden;
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    color: transparent;
+    clear: both;
+    visibility: hidden;
+    position: fixed;
+    cursor: pointer;
+    display: block;
+    border: none;
+    right: 50px;
+    bottom: 75px;
+    font-size: 0px;
+    outline: 0 !important;
+    z-index: 99;
+    transition: all 0.3s ease-in-out;
+  }
+  button.back-to-top:hover,
+  button.back-to-top:active,
+  button.back-to-top:focus {
+    outline: 0 !important;
+  }
+  button.back-to-top::before {
+    content: "\f077";
+    font-family: "FontAwesome";
+    display: block;
+    vertical-align: middle;
+    margin: -5px 0 auto;
+  }
+  button.back-to-top.show {
+    display: block;
+    background: #fff;
+    font-size: 25px;
+    right: 25px;
+    bottom: 50px;
+    height: 50px;
+    width: 50px;
+    visibility: visible;
+    box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 2px 4px 1px rgba(0, 0, 0, 0.25);
+  }
+  button.back-to-top.show:active {
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+    -moz-box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  }
+  
