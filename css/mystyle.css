@@ -299,10 +299,14 @@ code{
 }
 
 #article-right li{
-    list-style-type: none;
     font-size: 2vh;
-    margin-left: 1.5vh;
+    margin-left: 1vh;
 }
+
+#article-right li a:hover{
+    color: white;
+}
+
 ul{
     list-style-type: disc;
 
@@ -359,6 +363,24 @@ ol li::marker{
 .list-group-item-action:focus, .list-group-item-action:hover, .list-group-item.active {
     color: #312530;
     background-color: transparent;
+}
+
+.subtitle-5{
+    padding-top: 5vh;
+}
+
+.example-code{
+    margin: 4vh;
+    background-color: #c8b9c6;
+    padding: 3vh 3vh 3vh 3vh;
+    margin-right: 30vh;
+    line-height: 1.8vh;
+
+}
+
+.example-code code{
+    color: #312530;
+    font-size: 1.8vh;
 }
 
 #btn-back-to-top {
