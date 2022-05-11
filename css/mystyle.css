@@ -78,7 +78,7 @@ a:hover{
     -webkit-background-size: 700px;
     -webkit-background-clip: text;
     -webkit-animation-name: shine;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 3s;
     -webkit-animation-iteration-count: infinite;
     text-shadow: 0 0px 0px rgba(255, 249, 236, 0.3);
 }
@@ -104,7 +104,7 @@ a:hover{
 }
 
 #start a{
-    font-size: 3.5vh;
+    font-size: 4.5vh;
     color: #ac9457 !important;
     opacity: 1;
     text-decoration: none;
@@ -126,6 +126,7 @@ a:hover{
     background-size: 80vh;
     color: #494747;
     font-family: "Libre Baskerville";
+    padding-top: 6vh;
 }
 
 .novel-header h1, .novel-header h5,.novel-header h3{
@@ -135,11 +136,16 @@ a:hover{
 #novel-title{
     background: #ebe2cd;
     margin-top: 5vh;
-    height: 90vh;
+    height: 85vh;
 }
 
 #novel-intro p{
     text-align: center;
+    font-size: 2.2vh;
+}
+
+#novel-intro{
+    padding: 4vh 10vh 10vh 10vh;
 }
 
 #hr-first, #hr-second, #hr-third{
@@ -159,13 +165,31 @@ a:hover{
     margin-top: 6vh;
 }
 
+#pj-sect a{
+    font-size: 3.5vh;
+    color: #494747 !important;
+    opacity: 1;
+    text-decoration: none;
+    margin-top: 10vh;
+    margin-left: 26vh;
+    padding: 1.5vh 5vh 1.5vh 5vh;
+    text-transform: uppercase;
+    font-family: limelight;
+}
+
+#pj-sect a:hover{
+    color: #faf4e5 !important;
+    opacity: 1;
+
+}
+
 
 #second{
     height: 100vh;
 }
 #second-left{
     height: 100vh;
-    padding: 15vh;
+    padding: 10vh;
     background: url("../images/pattern3.png");
     background-size: 70vh;
     font-family: limelight;
@@ -175,11 +199,12 @@ a:hover{
 
 
 #second-right{
-    padding: 15vh;
+    padding: 10vh;
     font-size: 4vh;
     font-family: "encode sans";
     background-image: url("../images/ny4.png");
     background-repeat: repeat-x;
+    background-size: 82vh;
     background-position: bottom;
     color: #312530;
 
@@ -192,6 +217,11 @@ a:hover{
 
 .article-title{
     font-family: limelight;
+}
+
+.sect-summary{
+    font-size: 2.5vh;
+    padding: 1vh;
 }
 
 #second ul p{

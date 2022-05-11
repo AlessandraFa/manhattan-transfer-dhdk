@@ -40,13 +40,10 @@
               </ul>
             </li>
             <li class="nav-item ps-2">
-              <a class="nav-link active" aria-current="page" href="#" id="nav-active-link">About the project</a>
+              <a class="nav-link active" aria-current="page" href="About_project.html" id="nav-active-link">About the project</a>
             </li>
             <li class="nav-item ps-2">
-              <a class="nav-link active" aria-current="page" href="https://en.wikisource.org/wiki/Manhattan_Transfer" target="_blank" id="nav-active-link">Resources</a>
-            </li>
-            <li class="nav-item ps-2">
-              <a class="nav-link active" aria-current="page" href="#" target="_blank" id="nav-active-link">PDF</a>
+              <a class="nav-link active" aria-current="page" href="https://en.wikisource.org/wiki/Manhattan_Transfer" target="_blank" id="nav-active-link">Full Text</a>
             </li>
             </ul>
           </div>
@@ -94,6 +91,7 @@
                 </div>
               </li>
               <a class="list-group-item list-group-item-action" href="#conclusions">Conclusion</a>
+              <a class="list-group-item list-group-item-action" href="../download_files/">DOWNLOAD PDF</a>
             </div>
           </div>
           <div class="col-8 art-header">
@@ -104,41 +102,52 @@
               <p id="abstract"><i><b>Abstract</b> This article covers the process of encoding the novel Manhattan Transfer by author John Dos Passos following the guidelines of the Text Encoding Initiative. Some relevant categories were identified as the focus for the encoding for their potential as base for further analyses. Beyond the encoding of the structure of the novel, for which adequate TEI elements were selected, the encoding focused on the categories People, Places, Organizations, Language, Speech and Thought, Times and Measures.</i></p>
               <div id="introduction" class="text-sep"><img src="../images/deco-sep.png" width="25%"></div>
               <h3>Introduction</h3>
-              <p>This section covers the methodology of the encoding of the novel <a href="https://en.wikipedia.org/wiki/Manhattan_Transfer_(novel)" target="_blank"><i>Manhattan Transfer</i> by American novelist <a href="https://en.wikipedia.org/wiki/John_Dos_Passos" target="_blank">John Dos Passos</a>, published in 1925. The novel deals with the stories of several characters and is set New York in the 1920s, in the time often referred to as the <i>Jazz Era</i>. The novel is structured into three sections and each section is divided into chapters.</p>
-              <p>This report describes the process and choices related to the encoding of the novel, based on the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html" target="_blank">guidelines</a> of the <a href="https://tei-c.org/" target="_blank"><i>Text Encoding Initiative</i></a>. It focuses on different categories introduced in the following chapter to subdivide the elements and the attributes used for the encoding. These categories are People, Places, Organizations, Language, Speech and Thought, Time and Measures, and Varia. Below, you will find some text snippets as examples, however the full encoded text is available as xml file <a href="../download_files/TEI_MT_FullText.xml" target="_blank">here</a> or clicking on the <a href="#article-title">download link</a> below the title.</p>
+              <p>This section covers the methodology of the encoding of the novel <a href="https://en.wikipedia.org/wiki/Manhattan_Transfer_(novel)" target="_blank"><i>Manhattan Transfer</i></a> by American novelist <a href="https://en.wikipedia.org/wiki/John_Dos_Passos" target="_blank">John Dos Passos</a>, published in 1925. The novel deals with the stories of several characters and is set New York between the late 1890s and the 1920s, in the time often referred to as the <i>Jazz Era</i>. It is structured into three sections and each section is divided into five to eight chapters.</p>
+              <p>This report describes the process and choices related to the encoding of the novel, based on the <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html" target="_blank">guidelines</a> of the <a href="https://tei-c.org/" target="_blank"><i>Text Encoding Initiative</i></a>. It focuses on different categories introduced in the following sections to subdivide the elements and the attributes used for the encoding. These categories are People, Places, Organizations, Language, Speech and Thought, Time and Measures, and Varia. Some examples are available below, however the full encoded text is available as xml file <a href="../download_files/TEI_MT_FullText.xml" target="_blank">here</a> or clicking on the <a href="#article-title">download link</a> below the title.</p>
               <div id="resources" class="text-sep"><img src="../images/deco-sep.png" width="25%"></div>
               <h3>Resources and methodology</h3>
-              <p>The novel <i>Manhattan Transfer</i> is a public domain novel since it was published in 1925, thus more than seventy years ago. The full text is available on several online platforms; the text used by the authors of this work was downloaded from <i>Wikisource</i> (<a href="https://en.wikisource.org/wiki/Manhattan_Transfer" target="_blank">full text</a>).</p>
+              <p>The novel <i>Manhattan Transfer</i> is a public domain novel and the full text is available on several online platforms; the text used by the authors of this work was downloaded from <i>Wikisource</i> (<a href="https://en.wikisource.org/wiki/Manhattan_Transfer" target="_blank">full text</a>).</p>
               <p>The novel was divided into two parts to carry out the encoding and each part was encoded by a member of the group. It was performed manually, both in a linear way or using regular expressions to find specific passages in the text and check if all occurrences were encoded correctly.</p>
-              <p>The primary resource used for the encoding of <i>Manhattan Transfer</i> are the guidelines of the <a href="https://tei-c.org/" target="_blank"><i>Text Encoding Initiative</i></a> (<a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html" target="_blank"> TEI guidelines</a>), a consortium that develops and maintains the standards for the encoding of digital text. The explanations and examples contained in the guidelines were used to select the most appropriate elements and attributes.</p>
-              <p>The encoding related to the use of language by the author was developed following information on the <a href="https://www.oxfordlearnersdictionaries.com/" target="_blank"><i>Oxford Advanced Learner’s Dictionary</i></a>, used as reference to define language variations, uncommon or informal uses, as explained in the <a href="#">Language</a> section below.</p>
+              <p>The primary resource used for the encoding of <i>Manhattan Transfer</i> are the guidelines of the <a href="https://tei-c.org/" target="_blank"><i>Text Encoding Initiative</i></a> (<a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/index.html" target="_blank">TEI guidelines</a>), a consortium that develops and maintains the standards for the encoding of digital text. The explanations and examples contained in the guidelines were used to select the most appropriate elements and attributes.</p>
+              <p>The encoding related to the use of language by the author was developed based on the <a href="https://www.oxfordlearnersdictionaries.com/" target="_blank"><i>Oxford Advanced Learner’s Dictionary</i></a>, used as reference to define language variations, uncommon or informal uses, as explained in the <a href="#">Language</a> section below.</p>
               <div id="encoding" class="text-sep"><img src="../images/deco-sep.png" width="25%"></div>
               <h3>Encoding Categories</h3>
               <p>The following sections illustrate the <a href="https://tei-c.org/" target="_blank"><i>TEI</i></a> <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/REF-ELEMENTS.html" target="_blank">elements</a> and <a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/REF-ATTS.html" target="_blank">attributes</a> used for the encoding of <i>Manhattan Transfer</i>, and the reasons behind each choice. <span id="structure"></span>They are divided into categories based on their use and meaning to allow the user to navigate more easily.</p>
 
               <h4>Structure</h4> <!--Laura-->
-              <p>The initial <code><b>&lt;teiHeader&gt;</b></code> tag, completely different from the <i>front matter</i>, supplies descriptive and declarative metadata associated with a digital resource or set of resources - in our case, the Manhattan Transfer version available in the public domain. Among the <code><b>&lt;teiHeader&gt;</b></code> tag’s five principal components, we picked three: <code><b>&lt;fileDesc&gt;</b></code>, <code><b>&lt;encodingDesc&gt;</b></code>, and <code><b>&lt;profileDesc&gt;</b></code>.</p>
+              <p>The initial <code><b>&lt;teiHeader&gt;</b></code> tag, completely different from the <i>front matter</i>, supplies descriptive and declarative metadata associated with a digital resource or set of resources - in our case, the <i>Manhattan Transfer</i> version available in the public domain. Among the <code><b>&lt;teiHeader&gt;</b></code> tag’s five principal components, we picked three: <code><b>&lt;fileDesc&gt;</b></code>, <code><b>&lt;encodingDesc&gt;</b></code>, and <code><b>&lt;profileDesc&gt;</b></code>.</p>
 
-              <p><code><b>&lt;fileDesc&gt;</b></code>: a file description, containing a full bibliographical description of the computer file itself. It has generally three mandatory parts:</p>
+              <p><code><b>&lt;fileDesc&gt;</b></code> entails a file description that comprises a full bibliographical description of the computer file itself. It has generally three mandatory parts:</p>
               <ol>
                 <li><p><code><b>&lt;titleStmt&gt;</b></code>:it contains child elements that provide basic metadata about the document, including the title of the resource (<code><b>&lt;title&gt;</b></code>), author (<code><b>&lt;author&gt;</b></code>), and editor names, as well as the names and roles of other people who contributed to the creation of the electronic document (<code><b>&lt;respStmt&gt;</b></code>);</p></li>
 
                 <li><p><code><b>&lt;publicationStmt&gt;</b></code>: it contains basic child elements regarding publication information of the electronic text: <code><b>&lt;publisher&gt;</b></code> and <code><b>&lt;distributor&gt;</b></code>, <code><b>&lt;date&gt;</b></code>, <code><b>&lt;availability&gt;</b></code> and the specified <code><b>&lt;licence&gt;</b></code>.</p></li>
 
-                <li><p><code><b>&lt;sourceDesc&gt;</b></code>: it contains child elements that describe the original source from which the electronic text was created. Inside the tag we put: <code><b>&lt;bibl&gt;</b></code> and <code><b>&lt;listPerson&gt;</b></code>:</p></li>
+                <li><p><code><b>&lt;sourceDesc&gt;</b></code>: it contains child elements that describe the original source from which the electronic text was created. The following elements were nested in it: <code><b>&lt;bibl&gt;</b></code> and <code><b>&lt;listPerson&gt;</b></code>:</p></li>
                 <ul style="list-style-type:none;">
                   <li><p><code><b>&lt;bibl type=”printSource”&gt;</b></code> and then its children: <code><b>&lt;author&gt;</b></code>, <code><b>&lt;title&gt;</b></code>, <code><b>&lt;date&gt;</b></code>, <code><b>&lt;publisher&gt;</b></code> as stated by the source.</p></li>
-                  <li><p><code><b>&lt;listPerson&gt;</b></code> contains a list of descriptions, each of which provides information about an identifiable person or a group of people, in our case the list of all Manhattan Transfer’s characters. The TEI elements used to identify characters’ names in the text are described thoroughly in the People section below.</p></li>
+                  <li><p><code><b>&lt;listPerson&gt;</b></code> contains a list of descriptions, each of which provides information about an identifiable person or a group of people, in our case the list of all <i>Manhattan Transfer</i>’s characters. The TEI elements used to identify characters’ names in the text are described thoroughly in the People section below.</p></li>
                 </ul>
               </ol>
               <p><code><b>&lt;encodingDesc&gt;</b></code>: documents the relationship between an electronic text and the source or sources from which it was derived.</p>
               <p><code><b>&lt;profileDesc&gt;</b></code>: provides a detailed description of non-bibliographic aspects of a text. We decided to specify:</p>
               <ul>
-                <li><p><code><b>&lt;langUsage&gt;</b></code> with its nested tags <code><b>&lt;language&gt;</b></code> and <code><b>&lt;sublanguages&gt;</b></code> (aggiungerei <code><b>&lt;sublanguages&gt;</b></code>: french, italian)</p></li>
+                <li><p><code><b>&lt;langUsage&gt;</b></code> with its nested element <code><b>&lt;language&gt;</b></code></p></li>
                 <li><p><code><b>&lt;textClass&gt;</b></code> through which we provided additional information about the topics of the text by providing a couple of <code><b>&lt;keywords&gt;</b></code> (and its nested tag <code><b>&lt;term&gt;</b></code>)</p></li>
-                <li><p><code><b>&lt;textDesc&gt;</b></code> (<code><b>&lt;authorGender&gt;</b></code>, <code><b>&lt;size&gt;</b></code>, <code><b>&lt;reprintCount&gt;</b></code>, <code><b>&lt;timeSlot&gt;</b></code>)</p></li>
+                <li><p><code><b>&lt;textDesc&gt;</b></code>, that contains the following elements:
+                <div class="example-code">  
+                  <ul>
+                    <li><p><code><b>&lt;channel mode="w"/&gt;</b></code></p></li>
+                    <li><p><code><b>&lt;constitution type="single"/&gt;</b></code></p></li>
+                    <li><p><code><b>&lt;derivation type="original"/&gt;</b></code></p></li>
+                    <li><p><code><b>&lt;domain type="art"/&gt;</b></code></p></li>
+                    <li><p><code><b>&lt;factuality type="fiction"/&gt;</b></code></p></li>
+                    <li><p><code><b>&lt;interaction type="none"/&gt;</b></code></p></li>
+                    <li><p><code><b>&lt;preparedness type="prepared"/&gt;</b></code></p></li>
+                    <li><p><code><b>&lt;purpose type="entertain" degree="high"/&gt;</b></code></p></li>
+                </div>
               </ul>
-              <p>And finally, we ended the <code><b>&lt;teiHeader&gt;</b></code> with a couple of tags:</p>
+              <p>Finally, the following elements appear in the <code><b>&lt;teiHeader&gt;</b></code>:</p>
               <ul>
                 <li><p><code><b>&lt;extent&gt;</b></code> element indicate its size, specified with the <code><b>&lt;measure unit=”words”&gt;</b></code></p></li>
                 <li><p><code><b>&lt;revisionDesc&gt;</b></code> and its child <code><b>&lt;change&gt;</b></code>, in order to provide information about the last revision of our work</p></li>
@@ -147,30 +156,22 @@
               <p>First we have the <code><b>&lt;titlePage&gt;</b></code> with its additional info <code><b>&lt;docTitle&gt;</b></code> (and its child <code><b>&lt;titlePart&gt;</b></code>) and <code><b>&lt;docAuthor&gt;</b></code>.</p>
               <p>Then two <code><b>&lt;div type=”gen”&gt;</b></code> one for an intermediary repetition of the title and another <code><b>&lt;div type=”authorSWorks&gt;</b></code> to list all the author’s other works. This list features a <code><b>&lt;head&gt;</b></code> and the actual <code><b>&lt;list&gt;</b></code> with its various <code><b>&lt;item&gt;</b></code>.</p>
 
-              <p>The element <code><b>&lt;figure&gt;</b></code> was exploited when we needed to mark the presence of a couple of illustrations present in the eletronic version chosen. Nested inside of it is the <code><b>&lt;graphic&gt;</b></code> which provides the url for the original figure. </p>
+              <p>The element <code><b>&lt;figure&gt;</b></code> was exploited when we needed to mark the presence of a couple of illustrations present in the digitized version. Nested inside of it is the <code><b>&lt;graphic&gt;</b></code> which provides the url for the original figure. </p>
 
               <p>Once again the title is repeated with the <code><b>&lt;titlePage&gt;</b></code> tag and its child elements: <code><b>&lt;docTitle&gt;</b></code> (nested the actual <code><b>&lt;titlePart&gt;</b></code>),</p>
               <ul>
                 <li><p><code><b>&lt;byline&gt;</b></code></p></li>
                 <li><p><code><b>&lt;docAuthor&gt;</b></code></p></li>
-                <li><p><code><b>&lt;date&gt;</b></code></p></li>
+                <li><p><code><b>&lt;docDate&gt;</b></code></p></li>
                 <li><p><code><b>&lt;figure&gt;</b></code></p></li>
                 <li><p><code><b>&lt;docImprint&gt;</b></code> contains the imprint statement as given (usually) at the foot of a title page, in our case: the <code><b>&lt;publisher&gt;</b></code> (with the nested <code><b>&lt;name&gt;</b></code> tag) and <code><b>&lt;pubPlace&gt;</b></code> (with the nested <code><b>&lt;placeName&gt;</b></code>)</p></li>
               </ul>
-              <p>Then we have the <code><b>&lt;biblStruct&gt;</b></code> a structured bibliographic citation, in which only bibliographic sub-elements appear and in a specified order. In our case an <code><b>&lt;editionStmt&gt;</b></code> featuring:</p>
-              <ul>
-                <li><p><code><b>&lt;title&gt;</b></code></p></li>
-                <li><p><code><b>&lt;availability&gt;</b></code> with the copyright info</p></li>
-                <li><p><code><b>&lt;byline&gt;</b></code> with the <code><b>&lt;author&gt;</b></code> tag</p></li>
-                <li><p><code><b>&lt;imprint&gt;</b></code>, with the information about the printing</p></li>
-              </ul>
-              <p>Another generic <code><b>&lt;div&gt;</b></code> specified with a type=”contents” was created in order to list the structure of the book. The <code><b>&lt;div type=”contents”&gt;</b></code> is the main container, each section introduced by a <code><b>&lt;head&gt;</b></code> tag and followed by a list with the <code><b>&lt;list&gt;</b></code> tag and its child elements <code><b>&lt;item&gt;</b></code> for each chapter</p>
+              
+              <p>Another generic <code><b>&lt;div&gt;</b></code> specified with with the attribute <code><b>@type</b></code> and the value contents  was created in order to list the structure of the book. The <code><b>&lt;div type=”contents”&gt;</b></code> is the main container, each section introduced by a <code><b>&lt;head&gt;</b></code> tag and followed by a list with the <code><b>&lt;list&gt;</b></code> tag and its child elements <code><b>&lt;item&gt;</b></code> for each chapter</p>
 
-              <p>Each section of the book was grouped by the <code><b>&lt;group&gt;</b></code> tag - it “contains the body of a composite text, grouping together a sequence of distinct texts (or groups of such texts) which are regarded as a unit for some purpose, for example the collected works of an author, a sequence of prose essays, etc.” - then followed by the <code><b>&lt;text&gt;</b></code> tag - a container element for the actual content - and <code><b>&lt;body&gt;</b></code> - a container for the whole body of a single unitary text, excluding any front or back matter.</p>
+              <p>Each section of the book was grouped by the <code><b>&lt;group&gt;</b></code> tag - it “contains the body of a composite text, grouping together a sequence of distinct texts (or groups of such texts) which are regarded as a unit for some purpose, for example the collected works of an author, a sequence of prose essays, etc.” (<a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-group.html" target="_blank">TEI</a>) - then followed by the <code><b>&lt;text&gt;</b></code> tag - a container element for the actual content - and <code><b>&lt;body&gt;</b></code> - a container for the whole body of a single unitary text, excluding any front or back matter.</p>
                 
-              <p>Each section is nested inside a main <code><b>&lt;div&gt;</b></code> container featuring two attributes, one for the number of the section and the other for the type of <code><b>&lt;div&gt;</b></code> (ex. First Section: <code><b>&lt;div n=”1” type=”section”&gt;</b></code>.</p>
-                
-              <p>Same goes for the chapters (ex. <code><b>&lt;div n=”1” type=”chapter”&gt;</b></code>) to which follows a <ptr> tag targetting the previous list of contents.</p>
+              <p>Each section is nested inside a main <code><b>&lt;div&gt;</b></code> container featuring two attributes, one for the number of the section and the other for the type of <code><b>&lt;div&gt;</b></code> (ex. First Section: <code><b>&lt;div n=”1” type=”section”&gt;</b></code>). Same goes for the chapters (ex. <code><b>&lt;div n=”1” type=”chapter”&gt;</b></code>).</p>
                 
               <p>Each chapter is prefaced by a paragraph of what can only be described as a prose poem, which signals the theme of the chapter. For this <span id="people"></span>“impressionistic paragraph” the tag <code><b>&lt;epigraph&gt;</b></code> was chosen: it identifies a quotation at the start of a division.</p>
 
@@ -228,18 +229,6 @@
                   </div>
                 </li>
               </ul>
-                <p>Further elements were used to encode information about individuals, not strictly related to their names. These are: </p>
-              <ul>
-                <li>
-                  <p><code><b>&lt;occupation&gt;</b></code>, used to encode information about a person’s occupation or job.</p>
-                </li>
-                <li>
-                  <p><code><b>&lt;age value="#"&gt;</b></code>, used to encode information about a person’s age, indicating the value as attribute.
-                </li>
-                <li><span id="places"></span>
-                  <p><code><b>&lt;nationality&gt;</b></code>, used to encode information about a person’s nationality.</p>
-                </li>
-              </ul>
 
               <h4>Places</h4><!--Laura-->
               <p>When it came to the places cited in the text, we made a distinction between:</p>
@@ -257,11 +246,11 @@
                 <li><p><code><b>&lt;country&gt;</b></code> for the name of a geo-political unit, such as a nation, country, colony, or commonwealth, larger than or administratively superior to a region and smaller than a bloc.</p></li>
                 <li><p><code><b>&lt;region&gt;</b></code> for any administrative unit such as a state, province, or county, larger than a settlement, but smaller than a country (ex. <code><b>&lt;region type=”state”&gt;</b></code>).</p></li>
                 <li><p><code><b>&lt;settlement&gt;</b></code> for settlement such as a city, town, or village identified as a single geopolitical or administrative unit.</p></li>
-                <li><p><code><b>&lt;district&gt;</b></code> for any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic units. Given the American administrative configuration, we added <code>type=“borough”</code> for the five main New York boroughs and <code>type=“neighborhood”</code> for the various neighborhoods.</p></li>
+                <li><p><code><b>&lt;district&gt;</b></code> for any kind of subdivision of a settlement, such as a parish, ward, or other administrative or geographic units. Given the American administrative configuration, we added <code><b>type=“borough”</b></code> for the five main New York boroughs and <code>type=“neighborhood”</code> for the various neighborhoods.</p></li>
               </ul>
               <p></p>
               <ul>
-                <li><p><code><b>&lt;address&gt;</b></code> for postal address (and if necessary a <code><b>&lt;num&gt;</b></code> nested)</p></li>
+                <li><p><code><b>&lt;address&gt;</b></code> for postal address (with the element <code><b>&lt;addrLine;</b></code> and, if necessary, <code><b>&lt;num&gt;</b></code> nested)</p></li>
                 <li><p><code><b>&lt;offset&gt;</b></code> <span id="organizations"></span>for the direction of the offset between the two place names, dates, or times involved in the expression.</p></li>
               </ul>
 
@@ -281,7 +270,19 @@
               <p>The elements <code><b>&lt;orig&gt;</b></code> and <code><b>&lt;distinct&gt;</b></code> were also nested in case of misspelling of forms included in the dictionary as one of the categories listed above. An example is the word <i>aint</i>, encoded as <code><b>&lt;distinct type="informal"&gt; &lt;orig&gt;aint&lt;&#47;orig&gt;&#47;distinct&gt;</b></code> or <i>awright</i>, encoded <span id="speech"></span> as <code><b>&lt;distinct type="informal"&gt; &lt;orig&gt;awright&lt;&#47;orig&gt;&lt;&#47;distinct&gt;</b></code>.</p>
               
               <h4>Speech and thoughts</h4><!--Ale-->
-              <p>Dialogues are a prominent mean of communication in the novel. The element <code><b>&lt;said&gt;</b></code> was used for the encoding of direct and indirect speech, specifying the type of speech using the attribute @direct paired to either the values true or false. Whenever possible or relevant, the name of the speaking person was also introduced in this element using the attribute <code><b>@who</b></code>, paired with characters’ IDs. <code><b>&lt;said&gt;</b></code> was also used to encode characters’ thoughts, expressed in direct or indirect form, using the attribute <code><b>@aloud</b></code> paired with either the values true or false, and specifying the character’s ID as in the case of speech. The inclusion of characters’ IDs allows to keep track of characters mentions and interactions, that will be used in <span id="time"></span> section 3 (<a href="#">LINK</a>) for the network analysis of the novel.</p>
+              <p>Dialogues are a prominent mean of communication in the novel. The element <code><b>&lt;said&gt;</b></code> was used for the encoding of direct speech, specifying the type of speech using the attribute <code><b>@direct</b></code> paired to either the values true or false. Whenever possible or relevant, the name of the speaking person was also introduced in this element using the attribute <code><b>@who</b></code>, paired with characters’ IDs. <code><b>&lt;said&gt;</b></code> was also used to encode characters’ thoughts, expressed in direct or indirect form, using the attribute <code><b>@aloud</b></code> paired with either the values true or false, and specifying the character’s ID as in the case of speech. The inclusion of characters’ IDs allows to keep track of characters mentions and interactions, that will be used in the <span id="time"></span><a href="../html/3_Network_Issue.html">third section of this project</a> for the network analysis of the novel.</p>
+              <p>The element <code><b>&lt;foreign&gt;</b></code>, finally, was nested inside the <code><b>&lt;said&gt;</b></code> element whenever a character used a language different from English, as for example in the case of French, quite popular in the novel due to the presence of several French characters. The attribute <code><b>@xml:lang</b></code> was used to specify the language.</p>
+              
+              <div class="example-code" style="margin-right: 0vh; text-align: left;">
+                <code><b>&lt;said who="#JimmyHerf" aloud="true" direct="true"&gt;"I promise."&lt;/said&gt;</b></code>
+              </div>
+                
+              <div class="example-code" style="margin-right: 0vh; text-align: left;">
+                <p><code><b>&lt;said who="#CongoJake" aloud="true" direct="true"&gt;</b></code></p>
+                  <p style="padding-left: 3vh;"><code><b>&lt;foreign xml:lang="fr"&gt;J'ai fait trois fois le tour du monde Dans mes voyages,&lt;/foreign&gt;</b></code></p>
+                <p><code><b>&lt;/said&gt;</b></code></p>
+              </div>
+
 
               <h4>Time and Measures</h4> <!--Laura-->
               <p>Measurements in time and money were managed through the following tags.</p>
@@ -290,24 +291,27 @@
 
               <p>Precise dates were marked with the <code><b>&lt;date when=””&gt;</b></code> tag and other moments in time instead with:</p>
               <ul><span id="varia"></span>
-                <li><p><code><b>&lt;time when=””&gt;</b></code> when better specified, for example like <code><b>&lt;time when=”08:30:00”&gt;</b></code>half past eight o'clock</time></p></li>
-                <li><p><code><b>&lt;time dur-iso=””&gt;</b></code> wwhen less clear cut phrasing, in which case we rely on the ISO 8601, an international standard covering time-related data. </p></li>
+                <li><p><code><b>&lt;time when=””&gt;</b></code> when better specified, for example like:</p></li>
+                <div class="example-code"> 
+                  <p><code><b>&lt;time when=”08:30:00”&gt;half past eight&lt;/time&gt;</b></code></p>
+                </div>
+                <li><p><code><b>&lt;time dur-iso=””&gt;</b></code> when indicating a temporal duration, in which case we rely on the ISO 8601, an international standard covering time-related data: </p></li>
+                <div class="example-code">
+                  <p><code><b>&lt;time  dur-iso=”PT4D”&gt;four days&lt;/time&gt;</b></code></p>
+                </div>
               </ul>
 
               <h4>Varia</h4><!--Laura-->
               <p>In this last section, we are going to summarize the still not mentioned tags covering very different matters.</p>
 
-              <p><code><b>&lt;floatingText&gt;</b></code> “contains a single text of any kind, whether unitary or composite, which interrupts the text containing it at any point and after which the surrounding text resumes”. We made use of this tag for example whenever a character would stop and read a piece of newspaper, a label, a sign, etc., which happens quite often.</p>
+              <p><code><b>&lt;floatingText&gt;</b></code> “contains a single text of any kind, whether unitary or composite, which interrupts the text containing it at any point and after which the surrounding text resumes” (<a href="https://tei-c.org/release/doc/tei-p5-doc/en/html/ref-floatingText.html" target="_blank">TEI</a>). We made use of this tag for example whenever a character would stop and read a piece of newspaper, a label, a sign, etc., which happens quite often.</p>
                 
-              <p>Being so heterogeneous, Manhattan Transfer is full of characters from different extractions, may it be ethnic or religious or else. For this reason, we added the tag <code><b>&lt;faith&gt;</b></code> to specify any faith, religion, or belief, and <code><b>&lt;lang&gt;</b></code> for the various languages present.</p>
+              <p>Being so heterogeneous, <i>Manhattan Transfer</i> is full of characters from different extractions, may it be ethnic or religious or else. For this reason, we added the tag <code><b>&lt;faith&gt;</b></code> to specify any faith, religion, or belief, and <code><b>&lt;lang&gt;</b></code> for the various languages present.</p>
                 
-              <p><code><b>&lt;abbr&gt;</b></code> (abbreviation) tag was used for abbreviation of any sort, then better specified in the attribute of the tag. Some examples:</p>
+              <p><code><b>&lt;abbr&gt;</b></code> (abbreviation) tag was used for abbreviation of any sort. Some examples:</p>
               <div class="example-code"><p><code><b>&lt;abbr title="Company"&gt;Co.&lt;/abbr&gt;</b></code></p>
-              <p><code><b>&lt;abbr title="Distinguished Service Cross"&gt;D.S.C.&lt;/abbr&gt;</b></code></p>
+              <p><code><b>&lt;abbr&gt;D.S.C.&lt;/abbr&gt;</b></code></p>
               </div>
-                
-                
-              <p>Regarding the historical events mentioned in the story, from the most recent ones - in which a character may have taken part - to the most ancient ones, we put the <code><b>&lt;event&gt;</b></code> tag.</p>
                 
               <p>Given the careers or work environment in which the characters are usually involved, Dos Passos’s novel is full of songs, newspapers, musicals, theatrical works, etc.: for this category, we exploited the generic tag <code><b>&lt;title&gt;</b></code>, which - as the tei Guidelines states - “contains a title for any kind of work”.</p>
                 
@@ -323,9 +327,12 @@
               <div id="conclusions" class="text-sep"><img src="../images/deco-sep.png" width="25%"></div>
 
               <h4>Conclusion</h4>
-              <p>The aim of this section was presenting all TEI elements used for the encoding of Dos Passos's Novel <i>Manhattan Transfer</i>. Some elements categories were selected as focus, in order to provide a detailed encoding of some elements of the text. In particular, the <b>encoding of individuals' names and conversations</b> was performed thoroughly as a base for the third section of the project covering the network analysis of <i>Manhattan Transfer</i>. A further central category of the encoding focused on the use of <b>language</b>: two elements were adopted to provide a specification of different uses of language and a distinction between informal or slang words with the <b>personal style of the author</b>.</p>
-              <p>The result is a more in-depth encoding of these two elements categories, while a less detailed encoding was provided for other types of elements, such as places. This leaves the <b>possibility of extending the encoding</b> by adding, for example, unique identifiers to element identifying the places mentioned in the text.</p>
+              
               <p>A further possible approach is related to the <b>analysis of linguistic phenomena</b> based on the provided elements and on a possible extention. This would allow a comparison with other authors' of the time, opening up new perspectives with the help of <b>computational means</b>.</p>
+              <p>The aim of this section was to introduce all TEI elements used for the encoding of Dos Passos's Novel <i>Manhattan Transfer</i> and the reasoning behind the choices. The selected TEI elements were selected based to represent the different types of phenomena present in the novel.</p>
+              <p>The encoding focused in particular on <b>individuals and dialogues</b>, in which characters’ IDs are provided, and was performed thoroughly as a base for the third section of the project covering the network analysis of <i>Manhattan Transfer</i>. A further issue of the text encoding was related to <b>linguistic phenomena</b>: two elements were adopted to provide a specification of different uses of language and, in particular, a distinction between informal or slang words and the <b>author’s personal style</b>.</p>
+              <p>The category related to <b>places</b> was also provided with a detailed encoding. Nonetheless, there is the possibility of <b>extending the encoding</b> by adding, for example, unique identifiers to element identifying the places mentioned in the text.</p>
+              <p>A further <b>possible approach</b> could be the analysis of linguistic phenomena based on the provided elements and on a possible extension of the encoding with further categories related to language phenomena, possibly integrating multiple dictionaries as resources. An analysis of such phenomena would allow a comparison with other literary works, opening up new perspectives of analysis with the use of <b>computational means</b>.</p>
               <div id="goals" class="text-sep"><img src="../images/deco-sep.png" width="25%"></div>
             </div>
           </div>
