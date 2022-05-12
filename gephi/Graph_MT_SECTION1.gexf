@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-05-10">
+    <creator>NetworkX 2.6.3</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="JimmyHerf" label="JimmyHerf" />
+      <node id="JeffersonMerivale" label="JeffersonMerivale" />
+      <node id="JamesMerivale" label="JamesMerivale" />
+      <node id="LilyHerf" label="LilyHerf" />
+      <node id="EmilyMerivale" label="EmilyMerivale" />
+      <node id="JohnOglethorpe" label="JohnOglethorpe" />
+      <node id="EllenThatcher" label="EllenThatcher" />
+      <node id="ErnestineRigaud" label="ErnestineRigaud" />
+      <node id="EmileLoustec" label="EmileLoustec" />
+      <node id="CongoJake" label="CongoJake" />
+      <node id="EdThatcher" label="EdThatcher" />
+      <node id="SusieThatcher" label="SusieThatcher" />
+      <node id="MaisieMerivale" label="MaisieMerivale" />
+      <node id="JoeHarland" label="JoeHarland" />
+      <node id="GeorgeBaldwin" label="GeorgeBaldwin" />
+      <node id="NellieMcNiel" label="NellieMcNiel" />
+      <node id="GusMcNiel" label="GusMcNiel" />
+      <node id="PhilSandbourne" label="PhilSandbourne" />
+      <node id="Specker" label="Specker" />
+      <node id="MrEmery" label="MrEmery" />
+      <node id="AliceVaughan" label="AliceVaughan" />
+      <node id="MarcoOlafson" label="MarcoOlafson" />
+      <node id="RosieSilverman" label="RosieSilverman" />
+      <node id="MarcusAntoniusZucher" label="MarcusAntoniusZucher" />
+    </nodes>
+    <edges>
+      <edge source="JimmyHerf" target="JeffersonMerivale" id="0" weight="33" />
+      <edge source="JimmyHerf" target="JamesMerivale" id="1" weight="39" />
+      <edge source="JimmyHerf" target="LilyHerf" id="2" weight="196" />
+      <edge source="JimmyHerf" target="EmilyMerivale" id="3" weight="79" />
+      <edge source="JimmyHerf" target="MaisieMerivale" id="4" weight="107" />
+      <edge source="JimmyHerf" target="JoeHarland" id="5" weight="15" />
+      <edge source="JeffersonMerivale" target="EmilyMerivale" id="6" weight="57" />
+      <edge source="JeffersonMerivale" target="JoeHarland" id="7" weight="10" />
+      <edge source="JamesMerivale" target="EmilyMerivale" id="8" weight="9" />
+      <edge source="JamesMerivale" target="MaisieMerivale" id="9" weight="66" />
+      <edge source="LilyHerf" target="EmilyMerivale" id="10" weight="28" />
+      <edge source="LilyHerf" target="JoeHarland" id="11" weight="8" />
+      <edge source="EmilyMerivale" target="MaisieMerivale" id="12" weight="41" />
+      <edge source="EmilyMerivale" target="JoeHarland" id="13" weight="15" />
+      <edge source="JohnOglethorpe" target="EllenThatcher" id="14" weight="4" />
+      <edge source="EllenThatcher" target="EdThatcher" id="15" weight="85" />
+      <edge source="EllenThatcher" target="SusieThatcher" id="16" weight="34" />
+      <edge source="EllenThatcher" target="AliceVaughan" id="17" weight="56" />
+      <edge source="ErnestineRigaud" target="EmileLoustec" id="18" weight="112" />
+      <edge source="EmileLoustec" target="CongoJake" id="19" weight="234" />
+      <edge source="EmileLoustec" target="MarcoOlafson" id="20" weight="55" />
+      <edge source="CongoJake" target="MarcoOlafson" id="21" weight="94" />
+      <edge source="EdThatcher" target="SusieThatcher" id="22" weight="43" />
+      <edge source="EdThatcher" target="MarcusAntoniusZucher" id="23" weight="96" />
+      <edge source="SusieThatcher" target="RosieSilverman" id="24" weight="6" />
+      <edge source="GeorgeBaldwin" target="NellieMcNiel" id="25" weight="172" />
+      <edge source="GeorgeBaldwin" target="GusMcNiel" id="26" weight="41" />
+      <edge source="GeorgeBaldwin" target="PhilSandbourne" id="27" weight="36" />
+      <edge source="GeorgeBaldwin" target="Specker" id="28" weight="5" />
+      <edge source="GeorgeBaldwin" target="MrEmery" id="29" weight="16" />
+      <edge source="NellieMcNiel" target="GusMcNiel" id="30" weight="50" />
+      <edge source="NellieMcNiel" target="MrEmery" id="31" weight="11" />
+      <edge source="PhilSandbourne" target="Specker" id="32" weight="5" />
+    </edges>
+  </graph>
+</gexf>

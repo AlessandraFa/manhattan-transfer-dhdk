@@ -1,0 +1,139 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
+  <meta lastmodifieddate="2022-05-10">
+    <creator>NetworkX 2.6.3</creator>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static" name="">
+    <nodes>
+      <node id="JimmyHerf" label="JimmyHerf" />
+      <node id="FrancesHildebrand" label="FrancesHildebrand" />
+      <node id="BobHildebrand" label="BobHildebrand" />
+      <node id="EllenThatcher" label="EllenThatcher" />
+      <node id="GeorgeBaldwin" label="GeorgeBaldwin" />
+      <node id="Soubrine" label="Soubrine" />
+      <node id="AnnaCohen" label="AnnaCohen" />
+      <node id="Elmer" label="Elmer" />
+      <node id="GladysGaston" label="GladysGaston" />
+      <node id="PhineasBlackhead" label="PhineasBlackhead" />
+      <node id="Francie" label="Francie" />
+      <node id="DutchRobertson" label="DutchRobertson" />
+      <node id="JessieLincoln" label="JessieLincoln" />
+      <node id="Florence" label="Florence" />
+      <node id="JackCunningham" label="JackCunningham" />
+      <node id="JamesMerivale" label="JamesMerivale" />
+      <node id="MaisieMerivale" label="MaisieMerivale" />
+      <node id="CongoJake" label="CongoJake" />
+      <node id="TonyHunter" label="TonyHunter" />
+      <node id="NevadaJones" label="NevadaJones" />
+      <node id="JosephParker" label="JosephParker" />
+      <node id="AntonioCamerone" label="AntonioCamerone" />
+      <node id="Buckminster" label="Buckminster" />
+      <node id="RoySheffield" label="RoySheffield" />
+      <node id="AliceSheffield" label="AliceSheffield" />
+      <node id="Densch" label="Densch" />
+      <node id="SerenaDensch" label="SerenaDensch" />
+      <node id="MartinSchiff" label="MartinSchiff" />
+      <node id="JakeSilverman" label="JakeSilverman" />
+      <node id="RosieSilverman" label="RosieSilverman" />
+      <node id="MrRogers" label="MrRogers" />
+      <node id="MartinEmery" label="MartinEmery" />
+      <node id="JohnOglethorpe" label="JohnOglethorpe" />
+      <node id="HesterVoorhees" label="HesterVoorhees" />
+      <node id="CassandraWilkins" label="CassandraWilkins" />
+      <node id="RuthPrynne" label="RuthPrynne" />
+      <node id="NellieMcNiel" label="NellieMcNiel" />
+      <node id="GusMcNiel" label="GusMcNiel" />
+      <node id="CynthiaBlackhead" label="CynthiaBlackhead" />
+      <node id="EmilyMerivale" label="EmilyMerivale" />
+      <node id="Johnny" label="Johnny" />
+      <node id="AnnetteCardinale" label="AnnetteCardinale" />
+      <node id="MikeCardinale" label="MikeCardinale" />
+      <node id="JoeOKeefe" label="JoeOKeefe" />
+      <node id="BillyDougan" label="BillyDougan" />
+      <node id="BillyWaldron" label="BillyWaldron" />
+    </nodes>
+    <edges>
+      <edge source="JimmyHerf" target="FrancesHildebrand" id="0" weight="55" />
+      <edge source="JimmyHerf" target="BobHildebrand" id="1" weight="70" />
+      <edge source="JimmyHerf" target="EllenThatcher" id="2" weight="223" />
+      <edge source="JimmyHerf" target="GeorgeBaldwin" id="3" weight="4" />
+      <edge source="JimmyHerf" target="Francie" id="4" weight="4" />
+      <edge source="JimmyHerf" target="JamesMerivale" id="5" weight="22" />
+      <edge source="JimmyHerf" target="CongoJake" id="6" weight="199" />
+      <edge source="JimmyHerf" target="NevadaJones" id="7" weight="5" />
+      <edge source="JimmyHerf" target="RoySheffield" id="8" weight="62" />
+      <edge source="JimmyHerf" target="AliceSheffield" id="9" weight="122" />
+      <edge source="JimmyHerf" target="MartinSchiff" id="10" weight="31" />
+      <edge source="JimmyHerf" target="MartinEmery" id="11" weight="11" />
+      <edge source="JimmyHerf" target="EmilyMerivale" id="12" weight="16" />
+      <edge source="JimmyHerf" target="AnnetteCardinale" id="13" weight="7" />
+      <edge source="JimmyHerf" target="MikeCardinale" id="14" weight="5" />
+      <edge source="FrancesHildebrand" target="BobHildebrand" id="15" weight="18" />
+      <edge source="FrancesHildebrand" target="EllenThatcher" id="16" weight="39" />
+      <edge source="FrancesHildebrand" target="AliceSheffield" id="17" weight="9" />
+      <edge source="BobHildebrand" target="EllenThatcher" id="18" weight="27" />
+      <edge source="BobHildebrand" target="RoySheffield" id="19" weight="6" />
+      <edge source="EllenThatcher" target="GeorgeBaldwin" id="20" weight="33" />
+      <edge source="EllenThatcher" target="Soubrine" id="21" weight="28" />
+      <edge source="EllenThatcher" target="AnnaCohen" id="22" weight="4" />
+      <edge source="EllenThatcher" target="JamesMerivale" id="23" weight="33" />
+      <edge source="EllenThatcher" target="CongoJake" id="24" weight="12" />
+      <edge source="EllenThatcher" target="MartinEmery" id="25" weight="8" />
+      <edge source="EllenThatcher" target="JohnOglethorpe" id="26" weight="44" />
+      <edge source="EllenThatcher" target="HesterVoorhees" id="27" weight="10" />
+      <edge source="EllenThatcher" target="CassandraWilkins" id="28" weight="26" />
+      <edge source="EllenThatcher" target="RuthPrynne" id="29" weight="27" />
+      <edge source="EllenThatcher" target="EmilyMerivale" id="30" weight="33" />
+      <edge source="EllenThatcher" target="JoeOKeefe" id="31" weight="5" />
+      <edge source="GeorgeBaldwin" target="NevadaJones" id="32" weight="42" />
+      <edge source="GeorgeBaldwin" target="Densch" id="33" weight="11" />
+      <edge source="GeorgeBaldwin" target="NellieMcNiel" id="34" weight="23" />
+      <edge source="GeorgeBaldwin" target="GusMcNiel" id="35" weight="53" />
+      <edge source="Soubrine" target="AnnaCohen" id="36" weight="9" />
+      <edge source="AnnaCohen" target="Elmer" id="37" weight="63" />
+      <edge source="GladysGaston" target="PhineasBlackhead" id="38" weight="14" />
+      <edge source="PhineasBlackhead" target="Densch" id="39" weight="7" />
+      <edge source="PhineasBlackhead" target="CynthiaBlackhead" id="40" weight="21" />
+      <edge source="Francie" target="DutchRobertson" id="41" weight="127" />
+      <edge source="DutchRobertson" target="JoeOKeefe" id="42" weight="39" />
+      <edge source="JessieLincoln" target="Florence" id="43" weight="12" />
+      <edge source="JessieLincoln" target="JackCunningham" id="44" weight="5" />
+      <edge source="JessieLincoln" target="JamesMerivale" id="45" weight="23" />
+      <edge source="JessieLincoln" target="EmilyMerivale" id="46" weight="12" />
+      <edge source="JackCunningham" target="JamesMerivale" id="47" weight="60" />
+      <edge source="JackCunningham" target="MaisieMerivale" id="48" weight="10" />
+      <edge source="JackCunningham" target="EmilyMerivale" id="49" weight="14" />
+      <edge source="JamesMerivale" target="MaisieMerivale" id="50" weight="48" />
+      <edge source="JamesMerivale" target="AliceSheffield" id="51" weight="4" />
+      <edge source="JamesMerivale" target="EmilyMerivale" id="52" weight="111" />
+      <edge source="MaisieMerivale" target="EmilyMerivale" id="53" weight="66" />
+      <edge source="CongoJake" target="NevadaJones" id="54" weight="13" />
+      <edge source="CongoJake" target="Johnny" id="55" weight="15" />
+      <edge source="CongoJake" target="AnnetteCardinale" id="56" weight="15" />
+      <edge source="CongoJake" target="MikeCardinale" id="57" weight="44" />
+      <edge source="TonyHunter" target="NevadaJones" id="58" weight="77" />
+      <edge source="NevadaJones" target="GusMcNiel" id="59" weight="24" />
+      <edge source="JosephParker" target="AntonioCamerone" id="60" weight="16" />
+      <edge source="Buckminster" target="AliceSheffield" id="61" weight="42" />
+      <edge source="RoySheffield" target="AliceSheffield" id="62" weight="76" />
+      <edge source="RoySheffield" target="MartinSchiff" id="63" weight="42" />
+      <edge source="AliceSheffield" target="MartinSchiff" id="64" weight="35" />
+      <edge source="Densch" target="SerenaDensch" id="65" weight="20" />
+      <edge source="Densch" target="GusMcNiel" id="66" weight="26" />
+      <edge source="JakeSilverman" target="RosieSilverman" id="67" weight="70" />
+      <edge source="JakeSilverman" target="MrRogers" id="68" weight="13" />
+      <edge source="RosieSilverman" target="MrRogers" id="69" weight="7" />
+      <edge source="JohnOglethorpe" target="CassandraWilkins" id="70" weight="5" />
+      <edge source="HesterVoorhees" target="CassandraWilkins" id="71" weight="4" />
+      <edge source="RuthPrynne" target="BillyWaldron" id="72" weight="56" />
+      <edge source="NellieMcNiel" target="GusMcNiel" id="73" weight="5" />
+      <edge source="GusMcNiel" target="JoeOKeefe" id="74" weight="83" />
+      <edge source="GusMcNiel" target="BillyDougan" id="75" weight="4" />
+      <edge source="EmilyMerivale" target="JoeOKeefe" id="76" weight="9" />
+      <edge source="Johnny" target="AnnetteCardinale" id="77" weight="11" />
+      <edge source="Johnny" target="MikeCardinale" id="78" weight="13" />
+      <edge source="AnnetteCardinale" target="MikeCardinale" id="79" weight="45" />
+      <edge source="JoeOKeefe" target="BillyDougan" id="80" weight="6" />
+    </edges>
+  </graph>
+</gexf>
