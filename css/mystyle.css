@@ -263,6 +263,13 @@ code{
     font-family: limelight;
 }
 
+.art-header li{
+    font-weight: 400;
+    font-family: "encode sans";
+    text-align: left;
+    font-size: 2.5vh;
+}
+
 #article1 h1{
     color: #312530;
     text-transform: uppercase;
