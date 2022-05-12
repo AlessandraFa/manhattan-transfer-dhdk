@@ -100,7 +100,7 @@
               <p>The world cloud provided by the Cirrus tool - by default in the top-right corner of the window - visually represent the most frequently terms, positioned and sized accordingly to the value of their frequency.</p>
               <p>Among its option the default stop-words list was improved with a more complete one integrated with mispelled terms or incorrect spelling often put by Dos Passos to recreate spoken language, dilect or accent (see <code>< orig ></code> in Text Encoding).</p> 
               <p>Here you can dowload the <a href="#">list</a>.</p>
-              <iframe style='width: 477px; height: 378px;' src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-ce678f8f30bb07db3841756f9aa7835d&whiteList=&corpus=94c35f68fb2b340ec8dc70fef5fa2b78'></iframe>
+              <iframe style='width: auto; height: auto;' src='https://voyant-tools.org/tool/Cirrus/?stopList=keywords-ce678f8f30bb07db3841756f9aa7835d&whiteList=&corpus=94c35f68fb2b340ec8dc70fef5fa2b78'></iframe>
               <p>Analysing the results immediate assertations can be done.</p>
               <h4>Dialogues</h4>
               <p>The word <b>“said”</b> seems to appear almost fourhundreds times and if we take into account also the other frequent terms semantically related to it - such as <b>think (189)</b>, <b>say (154)</b>, <b>voice (135)</b>, <b>talk (88)</b> and <b>says (56)</b> - it’s clear that dialogues, thoughts, direct and indirect speeches are a massive part of the text.</p>
@@ -117,18 +117,65 @@
               <p>We first meet her at the very beginning of the book, when she is just a newborn baby (<b>Ellen Thatcher</b>). We then see her grow up and interect with different characters for different reason (career or relationship motives) and watch her become <b>Ellen Oglethorpe</b>, then <b>Ellen Herf</b>, and finally <b>Ellen Baldwin</b>. Her friends and acquaintances call her by a variety of names: <b>Ellie</b>, <b>Elaine</b>, <b>Helena</b>, and, still, <b>Ellen</b>.</p> 
               <p>This subject and her evolution within the text will be better explained, again, the <a href="#">"Trends"</a> paragraph.</p>
               <h4>Settings</h4>
-              <p>blabla</p>
-
+              <p>Among the other most frequent words we may find verbs or nouns related to <i>spaces</i> or <i>motion</i> - <b>go (358)</b>, <b>see (260)</b>, <b>going (217)</b>, <b>door (207)</b>, <b>room (192)</b>, <b>went (172)</b>. <b>street (167)</b>, <b>walked (127)</b>, <b>bed (107)</b>, <b>looked (103)</b>, <b>corner (85)</b>, <b>avenue (75)</b>, <b>city (71)</b> - and <i>time</i> - <b>time (168)</b>, <b>night (112)</b>, <b>day (81)</b>, <b>years (72)</b>. We already mentioned Dos Passos’ cinematic style and these new elements may just confirm it. </p>
+              <p>New York can be found basically at any given moment: characters move in and out of places, cross street, take taxi to reach restaurants or hotels, to meet other characters at night or during the day.</p> 
+              <p>It’s clear that the book gives back a quite livily portrait of the Big Apple during those years and just by this quick overview we get how the vocabulary itself shows it.</p>
               <div id="list-item-4" class="text-sep"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-circle-fill" viewBox="0 0 16 16">
                 <circle cx="8" cy="8" r="8"/>
               </svg></div>
               <h3>4. Summary</h3>
-              <p>Aut quia dolores vel doloremque sequi ut galisum natus vel tempora voluptas  nihil nostrum. Et quae reprehenderit hic possimus corrupti quo libero placeat a illo quos. Cum quasi pariatur sit dolor nobis ea suscipit voluptatem et fugiat unde vel tempora placeat et labore eius eum molestias sunt! A aperiam placeat et facere rerum et voluptas dicta et repellat quisquam et possimus galisum et aperiam eius vel laborum deserunt.Lorem ipsum dolor sit amet. Quo commodi accusantium sed exercitationem tempora eos nesciunt mollitia eos odit dolorem ex voluptas iure aut provident dolor est ipsam tempora? Ut autem reiciendis 33 galisum reprehenderit At enim dolorem et sunt quis aut nesciunt asperiores aut asperiores minus quo pariatur quia. Ut laudantium asperiores ex vitae vitae sit galisum enim At incidunt dolor. </p><p>A incidunt doloribus At odio mollitia qui nisi maxime ab repellat ipsam. Eum galisum asperiores et praesentium officia eum fuga dicta  voluptate ipsa sed error fuga aut quia fugit est fugiat saepe. Qui alias voluptas et optio enim qui iure ipsa ad quasi odit. </p><p>Aut quia dolores vel doloremque sequi ut galisum natus vel tempora voluptas  nihil nostrum. Et quae reprehenderit hic possimus corrupti quo libero placeat a illo quos. Cum quasi pariatur sit dolor nobis ea suscipit voluptatem et fugiat unde vel tempora placeat et labore eius eum molestias sunt! A aperiam placeat et facere rerum et voluptas dicta et repellat quisquam et possimus galisum et aperiam eius vel laborum deserunt. </p>
+              <p>The Summary tool - by default in the bottom-left corner of the window - is a great starting point in order to collect general information about the text we are analysing. It provides an overview of the work with a bulleted list of th next categories:</p>
+              <ol>
+              <li>the actual overview including the <b>number of documents</b> in th text or in the corpus, <b>number of words</b>, and <b>number of unique words</b>;</li>
+              <li>the <b>top longest documents</b> (by the number of words) in the corpus, and the <b>shortest documents</b>. Following each title the actual number of words is provided in brackets;</li>
+              <li>the documents with the <b>top vocabulary densities</b>, and the documents with the <b>lowest</b>;</li>
+              <li>an approximation of the <b>average number of words per sentence</b>, both the highest and lowest values;</li>
+              <li>the five most frequent words in the corpus, with their frequencies, indicated to their right in brackets;</li>
+              <li>the <b>five words</b> with the <b>most notable peaks</b> in frequency;</li>
+              <li>the <b>top five most distinctive words</b> of each of the documents.</li>
+              </ol>
+              <p>As already explained in the previous paragraph, the most frequent terms are influenced by the chosen list of stop-words.</p>
+              <p>Here are our results:</p>
+              <h4>1. plain text</h4>
+              <iframe style='width: auto; height: auto;' src='https://voyant-tools.org/tool/Summary/?stopList=keywords-ce678f8f30bb07db3841756f9aa7835d&corpus=94c35f68fb2b340ec8dc70fef5fa2b78'></iframe> 
+              <p>Still little can be deducted from it. Let's see if the other versions may give back something more informative.</p>
+              <h4>2. divided by sections</h4>
+              <iframe style='width: auto; height: auto;' src='https://voyant-tools.org/tool/Summary/?stopList=keywords-58e9697e810c9307cbbe309c471bf3e2&corpus=8fc6d45e6c1950701cef012b6b613b67'></iframe>
+              <p>From this version we can, in fact, start extracting some interesting information:</p>
+              <ul> 
+              <li>the second section is the longest yet less dense part of the book;</li>
+              <li>the first, on the other hand, is the shortest yet most dense and readable.</li>
+              </ul>
+              <p>A good reasoning may be that the first section is the one in which many characters, places, and situations are introduced, therefore it results to be more dense in terms of vocabulary and more readable. Or, we may assume that the other sections present more dialogues or original forms (such as mispelling or lines in other languages - French, Italian or German), therefore they appear less readable than the first.</p>
+              <p>Another interesting point can be found in the last section <i>“the most characteristic terms”</i>: we could, for example, deduce which character or topics may be more prominant than the others and have a prior overview of each section.</p>
+              <p>Let's see if we can go a little deeper with the version divided by chapters.</p>
+              <h4>3. divided by chapters</h4>
+              <iframe style='width: auto; height: auto;' src='https://voyant-tools.org/tool/Summary/?stopList=keywords-699beef04eb65d2a57a1eeec5eab1dc4&corpus=3bad89e303a0292dc45101ca3db20887'></iframe>
+              <p>Moving to this last version, the one divided by chapters, we are definitely getting more detailed information.</p>
+              <p>The Second Section:</p> 
+              <ul>
+              <li>While be the overall longest, it is not the one with the longest chapter within, being them Chapter Three from the Third Section (“Revolving Doors”) and the Second Chapter from the First (“Metropolis”);</li>
+              <li> It seems to have three among the five shortest chapters of the whole book (Chapter 6 “Five Statutory Questions”, 7 “Rollercoaster”, and 8 “One More River to Jordan”);</li>
+              <li>Apparently features four out of the five less readable chapters of all (while, we have deducted from the previous version the third section being the overall last in this category). This may also be because the Second Section has more chapters than the Third so the other ones balance the general evaluation. Wihtout knowking this fact, we could have assumed something like this.</li>
+              </ul>
+              <p>The First Section:</p>
+              <ul>
+              <li>Confirms to be the one with the longest, most dense and readable chapters.</li>
+              </ul>
+              <p>Let’s know investigate the <i>“most characteristic words”</i> section: as previously foreshadowed, each chapter present in the list their most prominant characters/protagonists and topics.</p>
               <h3>5. Trends</h3>
-              <p></p>
-              <h3>6. Conclusion</h3>
-              <p></p>
-              <h3>7. Bibliography and sitography</h3>
+              <p><i>"Trends shows a line graph depicting the distribution of a word’s occurrence across a corpus or document."</i></p>
+              <p>blabla</p>
+              <h4>Jimmy</h4>
+              <h4>Ellen</h4>
+              <h4>Less notable characters</h4>
+              <h3>6. Links</h3>
+              <p>blabla</p>
+              <h4>Jimmy and Ellen</h4>
+              <p>blabla</p>
+              <h3>7. Conclusion</h3>
+              <p>About the results</p>
+              <h3>8. Bibliography and sitography</h3>
               <ul>
                 <li><a href="https://voyant-tools.org/docs/#!/guide">Voyant Tools Help</a></li>
                 <li><a href="https://www.jstor.org/stable/43796267">Gretchen Foster, <i>John Dos Passos' Use of Film Technique in "Manhattan Transfer & The 42nd Parallel"</i>, 1986</a></li>
