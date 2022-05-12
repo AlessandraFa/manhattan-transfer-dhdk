@@ -1,0 +1,15 @@
+Trova parola preceduta da ...---> (?<=[...])
+es. tutte le occurrence di Jimmy a inizio paragrafo (<p>)
+REGEX: (?<=<p>)Jimmy
+
+es. qualsiasi parola all'inizio di un paragrafo:
+REGEX: (?<=<p>)\w+
+
+es. un nome proprio preceduto da un tag
+REGEX: (?<=>)Jimmy
+tag con attributo (es. <addName type="nickname">Ellie):
+REGEX: (?<="\w+">)Ellie 
+
+Trova parola seguita da ...---> (?=[...])
+es. parola seguita da tag
+REGEX: Ellie(?=<)
