@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="en">
+  <head>
+
+    <!-- meta tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- css links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/mystyle.css">    
+    <title>MT - TEI Encoding</title>
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    <!-- HEADER -->
+
+        <!-- navbar start -->
+      <nav class="navbar navbar-expand-lg navbar-light p-2 nav-fixed fixed-top" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand justify-content-lg-start ps-2 " href="../index.html">MT</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-lg-center" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+            <li class="nav-item ps-2">
+                <a class="nav-link active" aria-current="page" href="../index.html" id="nav-active-link">Home</a>
+            </li>
+            <li class="nav-item dropdown ps-2">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Sections
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <li><a class="dropdown-item" href="1_TEI_Issue.html">Text Encoding</a></li>
+                <li><a class="dropdown-item" href="2_Voyant_Issue.html">Voyant</a></li>
+                <li><a class="dropdown-item" href="3_Network_Issue.html">Network Analysis</a></li>
+              </ul>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link active" aria-current="page" href="#" id="nav-active-link">About the project</a>
+            </li>
+            <li class="nav-item ps-2">
+              <a class="nav-link active" aria-current="page" href="https://en.wikisource.org/wiki/Manhattan_Transfer" target="_blank" id="nav-active-link">Full Text</a>
+            </li>
+            <li class="nav-item ps-2">
+            </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- navbar end -->
+
+
+      <div class="container-fluid" id="article1">
+        <!-- start first row -->
+        <div class="row">
+          <div class="col-2" id="article-left">
+          </div>
+          <div class="col-8 art-header">
+            <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+              <h1 id="article-title" style="padding-bottom: 5vh;">About this project</h1>
+              <p>The project <b>Manhattan Transfer: Computational Analysis of John Dos Passos's Novel</b> was developed by Alessandra Failla and Laura Travaglini for the course Digital Text in the Humanities as a part of the Digital Humanities and Digital Knowledge degree at University of Bologna.</p>
+              <p>The project consists of three sections providing different <b>computational approaches</b> for the analysis of the novel.</p>
+              <p>The <b>first section</b> covers the TEI-based encoding of the full text of <i>Manhattan Transfer</i>. A panoramic of the selected TEI elements are provided, as well as motivations for their choice.</p>
+              <p>The <b>second section</b> deals with the text analysis with <b>Voyant Tools</b>. A presentation and interpretation of the results are provided.</p>
+              <p>The <b>third section</b> presents a network analysis of the novel performed by extracting characters' interactions and the related centrality measures with <b>Python</b> and providing a visualization of the network with <b>Gephi</b>.</p>
+              <div id="#" class="text-sep"><img src="../images/deco-sep.png" width="25%"></div>
+            </div>
+          </div>
+          <div class="col-2" id="article-right">
+          </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+      <footer>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-md-3" id="footer-left"></div>
+            <div class="col-md-3 info-footer">
+              <p>This website is a project developed by Alessandra Failla and Laura Travaglini for the 2020/2021 course <a href="">Digital Text in the Humanities</a> held by Professor <a href="">Fabio Ciotti</a></p>
+            </div>
+            <div class="col-md-3 contacts">
+              <h4>Contacts</h4>
+                <a href="mailto: laura">laura</a>
+                <a href="mailto: alessandra.failla2@studio.unibo.it">alessandra.failla2@studio.unibo.it</a>
+            </div>
+            <div class="col-md-3" id="footer-right"></div>
+          </div>
+            
+          <button type="button" class="btn btn-danger btn-floating btn-lg" id="btn-back-to-top"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-chevron-up" viewBox="0 1 16 16">
+            <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
+          </svg></button>              
+
+          <div class="row">
+            <p id="cp">© 2021 Copyright: Alessandra Failla, Laura Travaglini</p>
+              <p id="discl"><a data-bs-toggle="modal" data-bs-target="#disclaimer">Learn more</a></p>
+          </div>
+          <a name="bottom" id="bottom"></a>
+        </div>
+      </footer>
+
+    <!-- SCRIPTS -->
+
+        <!-- Bootstrap Bundle with Popper -->
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="../js/js-mt.js"></script>
+        
+  </body>
+</html>
